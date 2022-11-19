@@ -1,0 +1,7417 @@
+[
+    {
+        "id": "ff98cff9c7d3b713",
+        "type": "tab",
+        "label": "Change password",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "c6fb9636a93b14db",
+        "type": "tab",
+        "label": "Location history",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "5e0e19af25bdecb3",
+        "type": "tab",
+        "label": "Live tracker",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "6d5315ce248df928",
+        "type": "tab",
+        "label": "Button Notification",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "684ad947b5bb77ec",
+        "type": "tab",
+        "label": "Hide demo",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "fa35390fd425e7e7",
+        "type": "tab",
+        "label": "Home flow",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "b4bcf42eae449190",
+        "type": "tab",
+        "label": "Recent notifications",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "68e3898e17f59f01",
+        "type": "tab",
+        "label": "SignUp",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "d16297ee91306ed1",
+        "type": "tab",
+        "label": "Login",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "7cbf2efbe14a9622",
+        "type": "tab",
+        "label": "Cloudant practice",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "60ed8df9984e056d",
+        "type": "tab",
+        "label": "General",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "898c629f10b511e3",
+        "type": "subflow",
+        "name": "WordSplitter",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 60,
+                "y": 80,
+                "wires": [
+                    {
+                        "id": "8c8cb67161c8c30b"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 340,
+                "y": 80,
+                "wires": [
+                    {
+                        "id": "8c8cb67161c8c30b",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "700a64323a039d33",
+        "type": "subflow",
+        "name": "InAreaSwitcher",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 40,
+                "y": 80,
+                "wires": [
+                    {
+                        "id": "38bb013160433b58"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 700,
+                "y": 60,
+                "wires": [
+                    {
+                        "id": "991bcffe0c56df88",
+                        "port": 0
+                    }
+                ]
+            },
+            {
+                "x": 700,
+                "y": 140,
+                "wires": [
+                    {
+                        "id": "991bcffe0c56df88",
+                        "port": 1
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "e0571323139eb71d",
+        "type": "subflow",
+        "name": "Expire session",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 40,
+                "y": 80,
+                "wires": [
+                    {
+                        "id": "96766435b7f4bce3"
+                    }
+                ]
+            }
+        ],
+        "out": [],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "32615be1060b7f7c",
+        "type": "subflow",
+        "name": "Login checker",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 40,
+                "y": 80,
+                "wires": [
+                    {
+                        "id": "bb93d38e85f60bd1"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 620,
+                "y": 60,
+                "wires": [
+                    {
+                        "id": "e4547471f258143c",
+                        "port": 0
+                    }
+                ]
+            },
+            {
+                "x": 620,
+                "y": 140,
+                "wires": [
+                    {
+                        "id": "e4547471f258143c",
+                        "port": 1
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "1f5453b7e8fbaa8b",
+        "type": "subflow",
+        "name": "Expire session and move redirect",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 60,
+                "y": 80,
+                "wires": [
+                    {
+                        "id": "258eb163cc8259f1"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 360,
+                "y": 80,
+                "wires": [
+                    {
+                        "id": "258eb163cc8259f1",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "07cdddf4fb9a8917",
+        "type": "subflow",
+        "name": "LoginValidator",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 40,
+                "y": 140,
+                "wires": [
+                    {
+                        "id": "5085e39bd3151e6d"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 1320,
+                "y": 60,
+                "wires": [
+                    {
+                        "id": "c27dd50d974739bc",
+                        "port": 0
+                    }
+                ]
+            },
+            {
+                "x": 1340,
+                "y": 140,
+                "wires": [
+                    {
+                        "id": "d1ed0c2d66e34349",
+                        "port": 0
+                    },
+                    {
+                        "id": "c27dd50d974739bc",
+                        "port": 1
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "7ebdbadd2fa727b7",
+        "type": "subflow",
+        "name": "SignupOperation",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 40,
+                "y": 100,
+                "wires": [
+                    {
+                        "id": "1e97e7610ef841cd"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 1560,
+                "y": 60,
+                "wires": [
+                    {
+                        "id": "5beaaf7196808c6d",
+                        "port": 0
+                    }
+                ]
+            },
+            {
+                "x": 1580,
+                "y": 120,
+                "wires": [
+                    {
+                        "id": "5beaaf7196808c6d",
+                        "port": 1
+                    },
+                    {
+                        "id": "b7f97407c0304ebe",
+                        "port": 1
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "df127433b8c2d631",
+        "type": "subflow",
+        "name": "Location Setter",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 40,
+                "y": 80,
+                "wires": [
+                    {
+                        "id": "2f461f857239bb01"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 360,
+                "y": 80,
+                "wires": [
+                    {
+                        "id": "2f461f857239bb01",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "d3d94c32e7098490",
+        "type": "ibmiot",
+        "name": "ibmiot1",
+        "keepalive": "60",
+        "serverName": "",
+        "cleansession": true,
+        "appId": "",
+        "shared": false
+    },
+    {
+        "id": "c411704f8473bfa7",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-custom",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#000000",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "reset": false
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#4B7930",
+                    "value": "#000000",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#000000",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#ca57ff",
+                    "edited": true
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#acff80",
+                    "edited": true
+                },
+                "group-textColor": {
+                    "value": "#ffffff",
+                    "edited": true
+                },
+                "group-borderColor": {
+                    "value": "#6e53f9",
+                    "edited": true
+                },
+                "group-backgroundColor": {
+                    "value": "#000000",
+                    "edited": true
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#000000",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 0,
+                "gy": 8,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "706e6a23b7383e7e",
+        "type": "cloudantplus-selector",
+        "host": "https://apikey-v2-16285rjxeg7p55zzth22jnm0mgh9ma3z4rjjc1wbcutq:0c3dda88cda4157af57f62e2d02269c8@92b1fa29-d0b9-4740-a5de-7e675e7a6fd3-bluemix.cloudantnosqldb.appdomain.cloud",
+        "name": "Server1"
+    },
+    {
+        "id": "40a7386b7afa07da",
+        "type": "twitter-credentials",
+        "screen_name": "vadhananmadhi"
+    },
+    {
+        "id": "64de6e515a91ac0c",
+        "type": "cloudantplus-selector",
+        "host": "92b1fa29-d0b9-4740-a5de-7e675e7a6fd3-bluemix.cloudantnosqldb.appdomain.cloud",
+        "name": "Server2"
+    },
+    {
+        "id": "47c46b49b501b9d3",
+        "type": "ui_spacer",
+        "z": "d16297ee91306ed1",
+        "name": "spacer",
+        "group": "49c735f98e72ebd3",
+        "order": 1,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "6665df2b7775eee3",
+        "type": "ui_group",
+        "name": "Login",
+        "tab": "a7a1d5091897158a",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "e35970a12a18e9ae",
+        "type": "ui_group",
+        "name": "2",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "510a25673d1f0c9b",
+        "type": "ui_group",
+        "name": "Group 2",
+        "tab": "",
+        "order": 2,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "a7a1d5091897158a",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "order": 3,
+        "disabled": false,
+        "hidden": true
+    },
+    {
+        "id": "9f0413c4fd8e8912",
+        "type": "ui_group",
+        "name": "SignUpSuccess",
+        "tab": "a7a1d5091897158a",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "8ce4f1c0714bed75",
+        "type": "ui_group",
+        "name": "SignupForm",
+        "tab": "a7a1d5091897158a",
+        "order": 4,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "56a42a68015d00ae",
+        "type": "ui_group",
+        "name": "HomeMenuButtons",
+        "tab": "a7a1d5091897158a",
+        "order": 3,
+        "disp": false,
+        "width": 25,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "cfdd9986a17c2a12",
+        "type": "ui_group",
+        "name": "RecentNotifications",
+        "tab": "a7a1d5091897158a",
+        "order": 7,
+        "disp": true,
+        "width": 25,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "4078b59fc4245402",
+        "type": "ui_tab",
+        "name": "Practice",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "c448cdd3f62c839a",
+        "type": "ui_group",
+        "name": "Insert",
+        "tab": "4078b59fc4245402",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "08e0d4a85458ae5b",
+        "type": "ui_group",
+        "name": "ChangePassword",
+        "tab": "a7a1d5091897158a",
+        "order": 8,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "67afa361093f6ece",
+        "type": "ui_spacer",
+        "z": "fa35390fd425e7e7",
+        "name": "spacer",
+        "group": "bd8ee165870649a3",
+        "order": 7,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "2501bbf034e4a0fa",
+        "type": "ui_spacer",
+        "z": "fa35390fd425e7e7",
+        "name": "spacer",
+        "group": "bd8ee165870649a3",
+        "order": 9,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "4477d674e0e989e7",
+        "type": "ui_spacer",
+        "z": "fa35390fd425e7e7",
+        "name": "spacer",
+        "group": "bd8ee165870649a3",
+        "order": 10,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "e58c4d308995dcd5",
+        "type": "ui_spacer",
+        "z": "fa35390fd425e7e7",
+        "name": "spacer",
+        "group": "bd8ee165870649a3",
+        "order": 12,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "895cc753138bc1bd",
+        "type": "ui_spacer",
+        "z": "fa35390fd425e7e7",
+        "name": "spacer",
+        "group": "9a4b78b2289b3203",
+        "order": 2,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "3e60dec798ef0249",
+        "type": "ui_spacer",
+        "z": "fa35390fd425e7e7",
+        "name": "spacer",
+        "group": "9a4b78b2289b3203",
+        "order": 3,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "f4e33dd141823f94",
+        "type": "ui_spacer",
+        "z": "fa35390fd425e7e7",
+        "name": "spacer",
+        "group": "9a4b78b2289b3203",
+        "order": 4,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "db8a3ef78ac4a0c3",
+        "type": "ui_spacer",
+        "z": "fa35390fd425e7e7",
+        "name": "spacer",
+        "group": "9a4b78b2289b3203",
+        "order": 5,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "5faf444a4b0ef087",
+        "type": "ui_spacer",
+        "z": "fa35390fd425e7e7",
+        "name": "spacer",
+        "group": "9a4b78b2289b3203",
+        "order": 6,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "7ff1446a45bda62b",
+        "type": "ui_spacer",
+        "z": "fa35390fd425e7e7",
+        "name": "spacer",
+        "group": "9a4b78b2289b3203",
+        "order": 7,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "2cb8ca779c9b872d",
+        "type": "ui_spacer",
+        "z": "fa35390fd425e7e7",
+        "name": "spacer",
+        "group": "9a4b78b2289b3203",
+        "order": 8,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "7c1f1b4de46486d3",
+        "type": "ui_spacer",
+        "z": "fa35390fd425e7e7",
+        "name": "spacer",
+        "group": "9a4b78b2289b3203",
+        "order": 9,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "b8d201a68f4916e8",
+        "type": "ui_spacer",
+        "z": "fa35390fd425e7e7",
+        "name": "spacer",
+        "group": "9a4b78b2289b3203",
+        "order": 10,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "3f5fadd5c9f6414e",
+        "type": "ui_spacer",
+        "z": "fa35390fd425e7e7",
+        "name": "spacer",
+        "group": "9a4b78b2289b3203",
+        "order": 11,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "6e1027c89a2684ee",
+        "type": "ui_spacer",
+        "z": "fa35390fd425e7e7",
+        "name": "spacer",
+        "group": "9a4b78b2289b3203",
+        "order": 12,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "181668eb2d6956db",
+        "type": "ui_spacer",
+        "z": "fa35390fd425e7e7",
+        "name": "spacer",
+        "group": "9a4b78b2289b3203",
+        "order": 13,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "58c4719e73d4034b",
+        "type": "ui_spacer",
+        "z": "fa35390fd425e7e7",
+        "name": "spacer",
+        "group": "9a4b78b2289b3203",
+        "order": 14,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "e0a8a509f78e2e3e",
+        "type": "ui_spacer",
+        "z": "fa35390fd425e7e7",
+        "name": "spacer",
+        "group": "9a4b78b2289b3203",
+        "order": 15,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "caeb7078345b4500",
+        "type": "ui_spacer",
+        "z": "fa35390fd425e7e7",
+        "name": "spacer",
+        "group": "9a4b78b2289b3203",
+        "order": 16,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "5951f54428ad4ea2",
+        "type": "ui_spacer",
+        "z": "fa35390fd425e7e7",
+        "name": "spacer",
+        "group": "9a4b78b2289b3203",
+        "order": 17,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "1cd13a88d6871e65",
+        "type": "ui_spacer",
+        "z": "fa35390fd425e7e7",
+        "name": "spacer",
+        "group": "9a4b78b2289b3203",
+        "order": 18,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "cbd02ec9ae2e221f",
+        "type": "ui_spacer",
+        "z": "fa35390fd425e7e7",
+        "name": "spacer",
+        "group": "9a4b78b2289b3203",
+        "order": 19,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "71c5c85644da7066",
+        "type": "ui_spacer",
+        "z": "fa35390fd425e7e7",
+        "name": "spacer",
+        "group": "9a4b78b2289b3203",
+        "order": 20,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "2347308bd5ed28b2",
+        "type": "ui_spacer",
+        "z": "fa35390fd425e7e7",
+        "name": "spacer",
+        "group": "9a4b78b2289b3203",
+        "order": 21,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "1f30c4d72e5113aa",
+        "type": "ui_spacer",
+        "z": "fa35390fd425e7e7",
+        "name": "spacer",
+        "group": "9a4b78b2289b3203",
+        "order": 22,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "9f6c4526b73c89e0",
+        "type": "ui_spacer",
+        "z": "fa35390fd425e7e7",
+        "name": "spacer",
+        "group": "9a4b78b2289b3203",
+        "order": 23,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "aa9637cdbf6077e4",
+        "type": "ui_spacer",
+        "z": "fa35390fd425e7e7",
+        "name": "spacer",
+        "group": "9a4b78b2289b3203",
+        "order": 24,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "e1a7ac9cf331c33d",
+        "type": "ui_spacer",
+        "z": "fa35390fd425e7e7",
+        "name": "spacer",
+        "group": "9a4b78b2289b3203",
+        "order": 25,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "811fc140776ac845",
+        "type": "ui_spacer",
+        "z": "fa35390fd425e7e7",
+        "name": "spacer",
+        "group": "9a4b78b2289b3203",
+        "order": 26,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "6873d7503a16f95b",
+        "type": "ui_spacer",
+        "z": "fa35390fd425e7e7",
+        "name": "spacer",
+        "group": "9a4b78b2289b3203",
+        "order": 27,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "b9d342ec029d4960",
+        "type": "ui_spacer",
+        "z": "fa35390fd425e7e7",
+        "name": "spacer",
+        "group": "9a4b78b2289b3203",
+        "order": 28,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "e6bf4fa9686bfd86",
+        "type": "ui_spacer",
+        "z": "fa35390fd425e7e7",
+        "name": "spacer",
+        "group": "9a4b78b2289b3203",
+        "order": 29,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "e69340b450046ff6",
+        "type": "ui_spacer",
+        "z": "fa35390fd425e7e7",
+        "name": "spacer",
+        "group": "9a4b78b2289b3203",
+        "order": 30,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "cb2202fcd40c1683",
+        "type": "ui_spacer",
+        "z": "fa35390fd425e7e7",
+        "name": "spacer",
+        "group": "9a4b78b2289b3203",
+        "order": 31,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "c94067e97d6c0781",
+        "type": "ui_spacer",
+        "z": "fa35390fd425e7e7",
+        "name": "spacer",
+        "group": "bd8ee165870649a3",
+        "order": 2,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "6b3245ed33480625",
+        "type": "ui_spacer",
+        "z": "fa35390fd425e7e7",
+        "name": "spacer",
+        "group": "bd8ee165870649a3",
+        "order": 6,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "3bc5bff7aa4b4eb3",
+        "type": "ui_spacer",
+        "z": "fa35390fd425e7e7",
+        "name": "spacer",
+        "group": "bd8ee165870649a3",
+        "order": 8,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "ef75bfa9a256e294",
+        "type": "ui_spacer",
+        "z": "fa35390fd425e7e7",
+        "name": "spacer",
+        "group": "bd8ee165870649a3",
+        "order": 9,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "cdd7b8292d6a5d6c",
+        "type": "ui_spacer",
+        "z": "fa35390fd425e7e7",
+        "name": "spacer",
+        "group": "bd8ee165870649a3",
+        "order": 11,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "21a56df26d24e975",
+        "type": "ui_spacer",
+        "z": "fa35390fd425e7e7",
+        "name": "spacer",
+        "group": "9a4b78b2289b3203",
+        "order": 2,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "1178118493bffd5a",
+        "type": "ui_spacer",
+        "z": "fa35390fd425e7e7",
+        "name": "spacer",
+        "group": "9a4b78b2289b3203",
+        "order": 3,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "f0edc7c7ccb432b2",
+        "type": "ui_spacer",
+        "z": "fa35390fd425e7e7",
+        "name": "spacer",
+        "group": "9a4b78b2289b3203",
+        "order": 4,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "4a6944e34b1c5895",
+        "type": "ui_spacer",
+        "z": "fa35390fd425e7e7",
+        "name": "spacer",
+        "group": "9a4b78b2289b3203",
+        "order": 5,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "d1e798697099b190",
+        "type": "ui_spacer",
+        "z": "fa35390fd425e7e7",
+        "name": "spacer",
+        "group": "9a4b78b2289b3203",
+        "order": 6,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "a4199dcbd4c62f00",
+        "type": "ui_spacer",
+        "z": "fa35390fd425e7e7",
+        "name": "spacer",
+        "group": "9a4b78b2289b3203",
+        "order": 7,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "6ad4f2a9fc47b2a1",
+        "type": "ui_spacer",
+        "z": "fa35390fd425e7e7",
+        "name": "spacer",
+        "group": "9a4b78b2289b3203",
+        "order": 8,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "09c49700daf81236",
+        "type": "ui_spacer",
+        "z": "fa35390fd425e7e7",
+        "name": "spacer",
+        "group": "9a4b78b2289b3203",
+        "order": 9,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "3a78f496d2f44774",
+        "type": "ui_spacer",
+        "z": "fa35390fd425e7e7",
+        "name": "spacer",
+        "group": "9a4b78b2289b3203",
+        "order": 10,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "5f653ad649a76261",
+        "type": "ui_spacer",
+        "z": "fa35390fd425e7e7",
+        "name": "spacer",
+        "group": "9a4b78b2289b3203",
+        "order": 11,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "fedb0a9a633e9047",
+        "type": "ui_spacer",
+        "z": "fa35390fd425e7e7",
+        "name": "spacer",
+        "group": "9a4b78b2289b3203",
+        "order": 12,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "72b1f9d9627eb924",
+        "type": "ui_spacer",
+        "z": "fa35390fd425e7e7",
+        "name": "spacer",
+        "group": "9a4b78b2289b3203",
+        "order": 13,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "091c391368085ca5",
+        "type": "ui_spacer",
+        "z": "fa35390fd425e7e7",
+        "name": "spacer",
+        "group": "9a4b78b2289b3203",
+        "order": 14,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "159181113b0a2caa",
+        "type": "ui_spacer",
+        "z": "fa35390fd425e7e7",
+        "name": "spacer",
+        "group": "9a4b78b2289b3203",
+        "order": 15,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "95f04dc6d0d7bc19",
+        "type": "ui_spacer",
+        "z": "fa35390fd425e7e7",
+        "name": "spacer",
+        "group": "9a4b78b2289b3203",
+        "order": 16,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "c792273778bbbd94",
+        "type": "ui_spacer",
+        "z": "fa35390fd425e7e7",
+        "name": "spacer",
+        "group": "9a4b78b2289b3203",
+        "order": 17,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "aa55720f0d5f76d2",
+        "type": "ui_spacer",
+        "z": "fa35390fd425e7e7",
+        "name": "spacer",
+        "group": "9a4b78b2289b3203",
+        "order": 18,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "fb8b156a31541ba9",
+        "type": "ui_spacer",
+        "z": "fa35390fd425e7e7",
+        "name": "spacer",
+        "group": "9a4b78b2289b3203",
+        "order": 19,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "6dca7cae8b94eb57",
+        "type": "ui_spacer",
+        "z": "fa35390fd425e7e7",
+        "name": "spacer",
+        "group": "9a4b78b2289b3203",
+        "order": 20,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "b6e62ce5cb5f2abc",
+        "type": "ui_spacer",
+        "z": "fa35390fd425e7e7",
+        "name": "spacer",
+        "group": "9a4b78b2289b3203",
+        "order": 21,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "e8c7527052e1d40e",
+        "type": "ui_spacer",
+        "z": "fa35390fd425e7e7",
+        "name": "spacer",
+        "group": "9a4b78b2289b3203",
+        "order": 22,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "bf0ce7efa9200231",
+        "type": "ui_spacer",
+        "z": "fa35390fd425e7e7",
+        "name": "spacer",
+        "group": "9a4b78b2289b3203",
+        "order": 23,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "c40c586a39ff06ed",
+        "type": "ui_spacer",
+        "z": "fa35390fd425e7e7",
+        "name": "spacer",
+        "group": "9a4b78b2289b3203",
+        "order": 24,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "4f5a5fb5cd14f49d",
+        "type": "ui_spacer",
+        "z": "fa35390fd425e7e7",
+        "name": "spacer",
+        "group": "9a4b78b2289b3203",
+        "order": 25,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "964b730a0c49a014",
+        "type": "ui_spacer",
+        "z": "fa35390fd425e7e7",
+        "name": "spacer",
+        "group": "9a4b78b2289b3203",
+        "order": 26,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "83aa73791036706f",
+        "type": "ui_spacer",
+        "z": "fa35390fd425e7e7",
+        "name": "spacer",
+        "group": "9a4b78b2289b3203",
+        "order": 27,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "3ddcd32309bb68ef",
+        "type": "ui_spacer",
+        "z": "fa35390fd425e7e7",
+        "name": "spacer",
+        "group": "9a4b78b2289b3203",
+        "order": 28,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "45804f8d34e77989",
+        "type": "ui_spacer",
+        "z": "fa35390fd425e7e7",
+        "name": "spacer",
+        "group": "9a4b78b2289b3203",
+        "order": 29,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "ed61632c7eaee5a4",
+        "type": "ui_spacer",
+        "z": "fa35390fd425e7e7",
+        "name": "spacer",
+        "group": "9a4b78b2289b3203",
+        "order": 30,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "4761cc0606d3f499",
+        "type": "ui_spacer",
+        "z": "fa35390fd425e7e7",
+        "name": "spacer",
+        "group": "9a4b78b2289b3203",
+        "order": 31,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "d128d5fecafceb6d",
+        "type": "ui_spacer",
+        "z": "fa35390fd425e7e7",
+        "name": "spacer",
+        "group": "bd8ee165870649a3",
+        "order": 2,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "47594643360a6280",
+        "type": "ui_spacer",
+        "z": "fa35390fd425e7e7",
+        "name": "spacer",
+        "group": "bd8ee165870649a3",
+        "order": 7,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "c1a54f556ce8c5c6",
+        "type": "ui_spacer",
+        "z": "fa35390fd425e7e7",
+        "name": "spacer",
+        "group": "bd8ee165870649a3",
+        "order": 8,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "596ed0e33d60971c",
+        "type": "ui_spacer",
+        "z": "fa35390fd425e7e7",
+        "name": "spacer",
+        "group": "bd8ee165870649a3",
+        "order": 9,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "f660a1024ffc632d",
+        "type": "ui_spacer",
+        "z": "fa35390fd425e7e7",
+        "name": "spacer",
+        "group": "bd8ee165870649a3",
+        "order": 10,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "0a0b54793852d706",
+        "type": "ui_spacer",
+        "z": "fa35390fd425e7e7",
+        "name": "spacer",
+        "group": "bd8ee165870649a3",
+        "order": 11,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "42fa6fafa0fd44c6",
+        "type": "ui_spacer",
+        "z": "fa35390fd425e7e7",
+        "name": "spacer",
+        "group": "9a4b78b2289b3203",
+        "order": 2,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "bc97c72b05056540",
+        "type": "ui_spacer",
+        "z": "fa35390fd425e7e7",
+        "name": "spacer",
+        "group": "9a4b78b2289b3203",
+        "order": 3,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "e2ded9b845296a67",
+        "type": "ui_spacer",
+        "z": "fa35390fd425e7e7",
+        "name": "spacer",
+        "group": "9a4b78b2289b3203",
+        "order": 4,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "187b65bf66ebc81d",
+        "type": "ui_spacer",
+        "z": "fa35390fd425e7e7",
+        "name": "spacer",
+        "group": "9a4b78b2289b3203",
+        "order": 5,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "7b0b97650cc500d4",
+        "type": "ui_spacer",
+        "z": "fa35390fd425e7e7",
+        "name": "spacer",
+        "group": "9a4b78b2289b3203",
+        "order": 6,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "76100f97810488ca",
+        "type": "ui_spacer",
+        "z": "fa35390fd425e7e7",
+        "name": "spacer",
+        "group": "9a4b78b2289b3203",
+        "order": 7,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "16bbb44177d1b5c8",
+        "type": "ui_spacer",
+        "z": "fa35390fd425e7e7",
+        "name": "spacer",
+        "group": "9a4b78b2289b3203",
+        "order": 8,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "61c8c3288707fd57",
+        "type": "ui_spacer",
+        "z": "fa35390fd425e7e7",
+        "name": "spacer",
+        "group": "9a4b78b2289b3203",
+        "order": 9,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "e4b57d72e3395b33",
+        "type": "ui_spacer",
+        "z": "fa35390fd425e7e7",
+        "name": "spacer",
+        "group": "9a4b78b2289b3203",
+        "order": 10,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "7809b479134a8a26",
+        "type": "ui_spacer",
+        "z": "fa35390fd425e7e7",
+        "name": "spacer",
+        "group": "9a4b78b2289b3203",
+        "order": 11,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "c443dc3df7b5cd4b",
+        "type": "ui_spacer",
+        "z": "fa35390fd425e7e7",
+        "name": "spacer",
+        "group": "9a4b78b2289b3203",
+        "order": 12,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "4cd8d6ecd30ffbde",
+        "type": "ui_spacer",
+        "z": "fa35390fd425e7e7",
+        "name": "spacer",
+        "group": "9a4b78b2289b3203",
+        "order": 13,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "fdbd2eafb70e2db0",
+        "type": "ui_spacer",
+        "z": "fa35390fd425e7e7",
+        "name": "spacer",
+        "group": "9a4b78b2289b3203",
+        "order": 14,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "f5d40824c74261c4",
+        "type": "ui_spacer",
+        "z": "fa35390fd425e7e7",
+        "name": "spacer",
+        "group": "9a4b78b2289b3203",
+        "order": 15,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "24db1baaad49c151",
+        "type": "ui_spacer",
+        "z": "fa35390fd425e7e7",
+        "name": "spacer",
+        "group": "9a4b78b2289b3203",
+        "order": 16,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "f057e39b5881d7ef",
+        "type": "ui_spacer",
+        "z": "fa35390fd425e7e7",
+        "name": "spacer",
+        "group": "9a4b78b2289b3203",
+        "order": 17,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "c356a804b2ea7950",
+        "type": "ui_spacer",
+        "z": "fa35390fd425e7e7",
+        "name": "spacer",
+        "group": "9a4b78b2289b3203",
+        "order": 18,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "fb7285a72941a37d",
+        "type": "ui_spacer",
+        "z": "fa35390fd425e7e7",
+        "name": "spacer",
+        "group": "9a4b78b2289b3203",
+        "order": 19,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "b76fdc26e9b667a7",
+        "type": "ui_spacer",
+        "z": "fa35390fd425e7e7",
+        "name": "spacer",
+        "group": "9a4b78b2289b3203",
+        "order": 20,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "5a76f621ca51b02d",
+        "type": "ui_spacer",
+        "z": "fa35390fd425e7e7",
+        "name": "spacer",
+        "group": "9a4b78b2289b3203",
+        "order": 21,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "5eb2fbf9e40f854d",
+        "type": "ui_spacer",
+        "z": "fa35390fd425e7e7",
+        "name": "spacer",
+        "group": "9a4b78b2289b3203",
+        "order": 22,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "080e77ee779fff3e",
+        "type": "ui_spacer",
+        "z": "fa35390fd425e7e7",
+        "name": "spacer",
+        "group": "9a4b78b2289b3203",
+        "order": 23,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "02a22a0ede60060a",
+        "type": "ui_spacer",
+        "z": "fa35390fd425e7e7",
+        "name": "spacer",
+        "group": "9a4b78b2289b3203",
+        "order": 24,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "430bcbd9087cdbc5",
+        "type": "ui_spacer",
+        "z": "fa35390fd425e7e7",
+        "name": "spacer",
+        "group": "9a4b78b2289b3203",
+        "order": 25,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "a0ad94b71238263c",
+        "type": "ui_spacer",
+        "z": "fa35390fd425e7e7",
+        "name": "spacer",
+        "group": "9a4b78b2289b3203",
+        "order": 26,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "101c4233a401050b",
+        "type": "ui_spacer",
+        "z": "fa35390fd425e7e7",
+        "name": "spacer",
+        "group": "9a4b78b2289b3203",
+        "order": 27,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "a9a574ad8b7d0cdf",
+        "type": "ui_spacer",
+        "z": "fa35390fd425e7e7",
+        "name": "spacer",
+        "group": "9a4b78b2289b3203",
+        "order": 28,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "80a6c6c96ce9709c",
+        "type": "ui_spacer",
+        "z": "fa35390fd425e7e7",
+        "name": "spacer",
+        "group": "9a4b78b2289b3203",
+        "order": 29,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "c72bd0c06f8ff20b",
+        "type": "ui_spacer",
+        "z": "fa35390fd425e7e7",
+        "name": "spacer",
+        "group": "9a4b78b2289b3203",
+        "order": 30,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "ad8d6f02148547ca",
+        "type": "ui_spacer",
+        "z": "fa35390fd425e7e7",
+        "name": "spacer",
+        "group": "9a4b78b2289b3203",
+        "order": 31,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "dce348b1bd58454a",
+        "type": "ui_group",
+        "name": "LiveTracker",
+        "tab": "a7a1d5091897158a",
+        "order": 8,
+        "disp": true,
+        "width": "25",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "b5071462c433c584",
+        "type": "ui_spacer",
+        "z": "5e0e19af25bdecb3",
+        "name": "spacer",
+        "group": "1290b9d6774497a2",
+        "order": 2,
+        "width": 20,
+        "height": 1
+    },
+    {
+        "id": "935a16596634e74f",
+        "type": "ui_spacer",
+        "z": "5e0e19af25bdecb3",
+        "name": "spacer",
+        "group": "1290b9d6774497a2",
+        "order": 3,
+        "width": 20,
+        "height": 1
+    },
+    {
+        "id": "f346d76fb490e357",
+        "type": "ui_spacer",
+        "z": "5e0e19af25bdecb3",
+        "name": "spacer",
+        "group": "1290b9d6774497a2",
+        "order": 4,
+        "width": 20,
+        "height": 1
+    },
+    {
+        "id": "4b255be29fc99b7f",
+        "type": "ui_spacer",
+        "z": "5e0e19af25bdecb3",
+        "name": "spacer",
+        "group": "1290b9d6774497a2",
+        "order": 5,
+        "width": 20,
+        "height": 1
+    },
+    {
+        "id": "a774b540357efcf9",
+        "type": "ui_spacer",
+        "z": "5e0e19af25bdecb3",
+        "name": "spacer",
+        "group": "1290b9d6774497a2",
+        "order": 6,
+        "width": 20,
+        "height": 1
+    },
+    {
+        "id": "7b0873e95bc9a435",
+        "type": "ui_spacer",
+        "z": "5e0e19af25bdecb3",
+        "name": "spacer",
+        "group": "1290b9d6774497a2",
+        "order": 7,
+        "width": 20,
+        "height": 1
+    },
+    {
+        "id": "326dddeb4732bc07",
+        "type": "ui_spacer",
+        "z": "5e0e19af25bdecb3",
+        "name": "spacer",
+        "group": "1290b9d6774497a2",
+        "order": 8,
+        "width": 20,
+        "height": 1
+    },
+    {
+        "id": "35a7bf47a3321722",
+        "type": "ui_spacer",
+        "z": "5e0e19af25bdecb3",
+        "name": "spacer",
+        "group": "1290b9d6774497a2",
+        "order": 9,
+        "width": 20,
+        "height": 1
+    },
+    {
+        "id": "4d2e3950220a17b4",
+        "type": "ui_spacer",
+        "z": "5e0e19af25bdecb3",
+        "name": "spacer",
+        "group": "1290b9d6774497a2",
+        "order": 10,
+        "width": 20,
+        "height": 1
+    },
+    {
+        "id": "1b16a4c7b59d17cf",
+        "type": "ui_spacer",
+        "z": "5e0e19af25bdecb3",
+        "name": "spacer",
+        "group": "1290b9d6774497a2",
+        "order": 11,
+        "width": 20,
+        "height": 1
+    },
+    {
+        "id": "6c93b50cb818b248",
+        "type": "ui_spacer",
+        "z": "5e0e19af25bdecb3",
+        "name": "spacer",
+        "group": "1290b9d6774497a2",
+        "order": 12,
+        "width": 20,
+        "height": 1
+    },
+    {
+        "id": "5594e07f086c7d97",
+        "type": "ui_spacer",
+        "z": "5e0e19af25bdecb3",
+        "name": "spacer",
+        "group": "1290b9d6774497a2",
+        "order": 13,
+        "width": 20,
+        "height": 1
+    },
+    {
+        "id": "a12e51ac877bb0bd",
+        "type": "ui_spacer",
+        "z": "5e0e19af25bdecb3",
+        "name": "spacer",
+        "group": "1290b9d6774497a2",
+        "order": 14,
+        "width": 20,
+        "height": 1
+    },
+    {
+        "id": "18d151bbdcbc3376",
+        "type": "ui_spacer",
+        "z": "5e0e19af25bdecb3",
+        "name": "spacer",
+        "group": "1290b9d6774497a2",
+        "order": 15,
+        "width": 20,
+        "height": 1
+    },
+    {
+        "id": "ce2396648db60519",
+        "type": "ui_spacer",
+        "z": "5e0e19af25bdecb3",
+        "name": "spacer",
+        "group": "1290b9d6774497a2",
+        "order": 16,
+        "width": 20,
+        "height": 1
+    },
+    {
+        "id": "1373668fd17d0ba1",
+        "type": "ui_spacer",
+        "z": "5e0e19af25bdecb3",
+        "name": "spacer",
+        "group": "1290b9d6774497a2",
+        "order": 17,
+        "width": 20,
+        "height": 1
+    },
+    {
+        "id": "03d6bbb76e7834f5",
+        "type": "ui_spacer",
+        "z": "5e0e19af25bdecb3",
+        "name": "spacer",
+        "group": "1290b9d6774497a2",
+        "order": 18,
+        "width": 20,
+        "height": 1
+    },
+    {
+        "id": "a0c77c5e9de4a1a9",
+        "type": "ui_spacer",
+        "z": "5e0e19af25bdecb3",
+        "name": "spacer",
+        "group": "1290b9d6774497a2",
+        "order": 19,
+        "width": 20,
+        "height": 1
+    },
+    {
+        "id": "a6780f5c9212793b",
+        "type": "ui_spacer",
+        "z": "5e0e19af25bdecb3",
+        "name": "spacer",
+        "group": "1290b9d6774497a2",
+        "order": 20,
+        "width": 20,
+        "height": 1
+    },
+    {
+        "id": "4387a7f2e764a33a",
+        "type": "ui_spacer",
+        "z": "5e0e19af25bdecb3",
+        "name": "spacer",
+        "group": "1290b9d6774497a2",
+        "order": 21,
+        "width": 20,
+        "height": 1
+    },
+    {
+        "id": "e5b0e82851061497",
+        "type": "ui_group",
+        "name": "LocationHistory",
+        "tab": "a7a1d5091897158a",
+        "order": 8,
+        "disp": true,
+        "width": "25",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "8c8cb67161c8c30b",
+        "type": "function",
+        "z": "898c629f10b511e3",
+        "name": "function 3",
+        "func": "var str = \"\";\nvar list = [];\nvar split = \"a\";\nfor(var i = 0;i<msg.payload.length;i++){\n    var ch = msg.payload.charAt(i);\n    if(ch==split){\n        list.push(str);\n        str = \"\";\n    }\n    else{\n        str+=ch;\n    }\n}\nif(str.length !=0){\n    list.push(str);\n}\nreturn {payload : list};",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 200,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "38bb013160433b58",
+        "type": "change",
+        "z": "700a64323a039d33",
+        "name": "InAreaExtractor",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "location.inarea",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 200,
+        "y": 80,
+        "wires": [
+            [
+                "991bcffe0c56df88"
+            ]
+        ]
+    },
+    {
+        "id": "991bcffe0c56df88",
+        "type": "switch",
+        "z": "700a64323a039d33",
+        "name": "InOrOut",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "false"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 540,
+        "y": 80,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "96766435b7f4bce3",
+        "type": "function",
+        "z": "e0571323139eb71d",
+        "name": "function 24",
+        "func": "global.set(\"email\",\"\");\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 190,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e4547471f258143c",
+        "type": "switch",
+        "z": "32615be1060b7f7c",
+        "name": "AlreadyLoggedIn",
+        "property": "loginStatus.alreadyLoggedIn",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "false"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 430,
+        "y": 80,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "bb93d38e85f60bd1",
+        "type": "function",
+        "z": "32615be1060b7f7c",
+        "name": "Check login status",
+        "func": "var email = global.get(\"email\");\nif (email == null || email == \"\") {\n    msg.loginStatus = { \"alreadyLoggedIn\": false };\n}\nelse {\n    msg.loginStatus = { \"alreadyLoggedIn\": true};\n}\nmsg.email=email;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 210,
+        "y": 80,
+        "wires": [
+            [
+                "e4547471f258143c"
+            ]
+        ]
+    },
+    {
+        "id": "258eb163cc8259f1",
+        "type": "function",
+        "z": "1f5453b7e8fbaa8b",
+        "name": "function 26",
+        "func": "global.set(\"email\",\"\");\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 200,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4c1bca4ba628df61",
+        "type": "cloudantplus-selector in",
+        "z": "07cdddf4fb9a8917",
+        "name": "",
+        "cloudant": "706e6a23b7383e7e",
+        "database": "child_tracker",
+        "service": "_ext_",
+        "search": "_query_",
+        "design": "",
+        "index": "",
+        "x": 430,
+        "y": 140,
+        "wires": [
+            [
+                "fedaf8d56385dfb9"
+            ]
+        ]
+    },
+    {
+        "id": "5085e39bd3151e6d",
+        "type": "function",
+        "z": "07cdddf4fb9a8917",
+        "name": "function 28",
+        "func": "if(msg.req==null){\n    email = msg.payload.email;\n}\nelse{\n    var email = msg.req.params.email;\n}\nmsg.enteredPassword = msg.payload.password;\nmsg.payload={\n    \"selector\":{\n        \"email\":{\n            \"$eq\":email\n        }\n    },\n    \"fields\":[\"email\",\"password\"]\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 190,
+        "y": 140,
+        "wires": [
+            [
+                "4c1bca4ba628df61"
+            ]
+        ]
+    },
+    {
+        "id": "fedaf8d56385dfb9",
+        "type": "function",
+        "z": "07cdddf4fb9a8917",
+        "name": "function 29",
+        "func": "if (msg.payload.docs.length != 0) {\n    var email = msg.payload.docs[0].email;\n    var password = msg.payload.docs[0].password;\n    msg.payload = { \"email\": email, \"password\": password };\n}\nelse {\n    msg.payload = { \"email\": null, \"password\": null };\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 630,
+        "y": 100,
+        "wires": [
+            [
+                "61116dda7fb11c1b"
+            ]
+        ]
+    },
+    {
+        "id": "61116dda7fb11c1b",
+        "type": "switch",
+        "z": "07cdddf4fb9a8917",
+        "name": "",
+        "property": "payload.email",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "null"
+            },
+            {
+                "t": "nnull"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 790,
+        "y": 100,
+        "wires": [
+            [
+                "d1ed0c2d66e34349"
+            ],
+            [
+                "e8ef0f8d8807cdc1"
+            ]
+        ]
+    },
+    {
+        "id": "d1ed0c2d66e34349",
+        "type": "function",
+        "z": "07cdddf4fb9a8917",
+        "name": "function 30",
+        "func": "msg.payload.isValidLogin = false;\nmsg.payload.message=\"Email not registered!\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1010,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e8ef0f8d8807cdc1",
+        "type": "function",
+        "z": "07cdddf4fb9a8917",
+        "name": "function 31",
+        "func": "var enteredPassword = msg.enteredPassword;\nvar requiredPassword = msg.payload.password;\nif(enteredPassword != requiredPassword){\n    msg.payload.isValidLogin = false;\n    msg.payload.message = \"Incorrect password entered!\";\n}\nelse{\n    msg.payload.isValidLogin = true;\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 970,
+        "y": 160,
+        "wires": [
+            [
+                "c27dd50d974739bc"
+            ]
+        ]
+    },
+    {
+        "id": "c27dd50d974739bc",
+        "type": "switch",
+        "z": "07cdddf4fb9a8917",
+        "name": "",
+        "property": "payload.isValidLogin",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "false"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1150,
+        "y": 160,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "1ecaabdfc9af7d06",
+        "type": "cloudantplus-selector out",
+        "z": "7ebdbadd2fa727b7",
+        "name": "",
+        "cloudant": "706e6a23b7383e7e",
+        "database": "child_tracker",
+        "service": "_ext_",
+        "payonly": true,
+        "operation": "insert",
+        "x": 1270,
+        "y": 60,
+        "wires": [
+            [
+                "5beaaf7196808c6d"
+            ]
+        ]
+    },
+    {
+        "id": "1e97e7610ef841cd",
+        "type": "function",
+        "z": "7ebdbadd2fa727b7",
+        "name": "EnteredFields setter",
+        "func": "var name = msg.payload.name;\nvar email = msg.payload.email;\nvar password = msg.payload.pass1;\nvar dob = msg.payload.dob;\nmsg.enteredFields={\n    \"name\":name,\n    \"email\":email,\n    \"password\":password,\n    \"dob\":dob\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 180,
+        "y": 220,
+        "wires": [
+            [
+                "093124fc42d24eee"
+            ]
+        ]
+    },
+    {
+        "id": "5beaaf7196808c6d",
+        "type": "switch",
+        "z": "7ebdbadd2fa727b7",
+        "name": "",
+        "property": "payload.ok",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "false"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1410,
+        "y": 60,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "093124fc42d24eee",
+        "type": "function",
+        "z": "7ebdbadd2fa727b7",
+        "name": "Query to check email presence",
+        "func": "var email = msg.enteredFields.email;\nmsg.payload={\n    \"selector\":{\n        \"entry-type\":\"user\",\n        \"email\":{\n            \"$eq\":email\n        }\n    },\n    \"fields\":[\"email\"]\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 120,
+        "wires": [
+            [
+                "92ec96a5a061c98f"
+            ]
+        ]
+    },
+    {
+        "id": "92ec96a5a061c98f",
+        "type": "cloudantplus-selector in",
+        "z": "7ebdbadd2fa727b7",
+        "name": "",
+        "cloudant": "706e6a23b7383e7e",
+        "database": "child_tracker",
+        "service": "_ext_",
+        "search": "_query_",
+        "design": "",
+        "index": "",
+        "x": 670,
+        "y": 120,
+        "wires": [
+            [
+                "b7f97407c0304ebe"
+            ]
+        ]
+    },
+    {
+        "id": "b7f97407c0304ebe",
+        "type": "switch",
+        "z": "7ebdbadd2fa727b7",
+        "name": "",
+        "property": "payload.docs.length",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "num"
+            },
+            {
+                "t": "gt",
+                "v": "0",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 850,
+        "y": 120,
+        "wires": [
+            [
+                "43ea24df42107a69"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "43ea24df42107a69",
+        "type": "function",
+        "z": "7ebdbadd2fa727b7",
+        "name": "user document creator",
+        "func": "msg.payload={\n    \"name\":msg.enteredFields.name,\n    \"email\":msg.enteredFields.email,\n    \"password\":msg.enteredFields.password,\n    \"dob\":msg.enteredFields.dob,\n    \"entry-type\":\"user\"\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1040,
+        "y": 60,
+        "wires": [
+            [
+                "1ecaabdfc9af7d06",
+                "e3a3511a1f5466ae"
+            ]
+        ]
+    },
+    {
+        "id": "e3a3511a1f5466ae",
+        "type": "debug",
+        "z": "7ebdbadd2fa727b7",
+        "name": "debug 18",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1020,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "2f461f857239bb01",
+        "type": "function",
+        "z": "df127433b8c2d631",
+        "name": "Location setter",
+        "func": "var lat = global.get(\"latitude\");\nvar lon = global.get(\"longitude\");\nmsg.payload={\"lat\":lat,\"lon\":lon};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 200,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a2087df74fbcb764",
+        "type": "ui_form",
+        "z": "ff98cff9c7d3b713",
+        "name": "Change password form",
+        "label": "Change password",
+        "group": "08e0d4a85458ae5b",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "New password",
+                "value": "pass1",
+                "type": "password",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Re-enter password",
+                "value": "pass2",
+                "type": "password",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "pass1": "",
+            "pass2": ""
+        },
+        "payload": "",
+        "submit": "submit",
+        "cancel": "cancel",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": "",
+        "className": "",
+        "x": 190,
+        "y": 240,
+        "wires": [
+            [
+                "548fbfa7718a43dd"
+            ]
+        ]
+    },
+    {
+        "id": "548fbfa7718a43dd",
+        "type": "function",
+        "z": "ff98cff9c7d3b713",
+        "name": "Client side check",
+        "func": "var pass1 = msg.payload.pass1;\nvar pass2 = msg.payload.pass2;\nflow.set(\"pass1\",pass1);\nflow.set(\"pass2\",pass2);\nif(pass1.length<8){\n    msg.payload.warning = \"Password must contain atleast 8 characters\";\n    msg.payload.canChangePassword = false;\n}\nelse if(pass1!=pass2){\n    msg.payload.warning = \"Passwords do not match\";\n    msg.payload.canChangePassword = false;\n}\nelse{\n    msg.formFields={\"password\" : pass1};\n    msg.payload.canChangePassword = true;\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 510,
+        "y": 260,
+        "wires": [
+            [
+                "e1deca68edb786ee"
+            ]
+        ]
+    },
+    {
+        "id": "e1deca68edb786ee",
+        "type": "switch",
+        "z": "ff98cff9c7d3b713",
+        "name": "Valid case switcher",
+        "property": "payload.canChangePassword",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "false"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 750,
+        "y": 260,
+        "wires": [
+            [
+                "af04b362f5556dd6"
+            ],
+            [
+                "594bad40372004dc"
+            ]
+        ]
+    },
+    {
+        "id": "df7757061d123827",
+        "type": "ui_toast",
+        "z": "ff98cff9c7d3b713",
+        "position": "top right",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "",
+        "x": 1220,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "594bad40372004dc",
+        "type": "function",
+        "z": "ff98cff9c7d3b713",
+        "name": "Warning message setter",
+        "func": "msg.payload = msg.payload.warning;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 970,
+        "y": 320,
+        "wires": [
+            [
+                "df7757061d123827",
+                "399fe52b64558508"
+            ]
+        ]
+    },
+    {
+        "id": "af04b362f5556dd6",
+        "type": "function",
+        "z": "ff98cff9c7d3b713",
+        "name": "id and rev query setter",
+        "func": "var email = global.get(\"email\");\nmsg.payload={\n    \"selector\":{\n        \"entry-type\":\"user\",\n        \"email\":{\n            \"$eq\":email\n        }\n    },\n    \"fields\":[\"_id\",\"_rev\",\"name\",\"email\",\"dob\"]\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1020,
+        "y": 200,
+        "wires": [
+            [
+                "b5ba2867dba00673"
+            ]
+        ]
+    },
+    {
+        "id": "8709ea52fc5bec57",
+        "type": "link in",
+        "z": "ff98cff9c7d3b713",
+        "name": "Link to change password",
+        "links": [
+            "33e4c00cc9abcbba"
+        ],
+        "x": 135,
+        "y": 120,
+        "wires": [
+            [
+                "eeda6fa40071816d"
+            ]
+        ]
+    },
+    {
+        "id": "72923d95796eb7c1",
+        "type": "change",
+        "z": "ff98cff9c7d3b713",
+        "name": "show or hide groups for change password page",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"group\":{\"hide\":[\"Home_Login\",\"SignUpSuccess\",\"Home_SignupForm\",\"Home_LocationHistory\",\"Home_RecentNotifications\",\"Home_LiveTracker\"],\"show\":[\"Home_HomeMenuButtons\",\"Home_ChangePassword\"]}}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 620,
+        "y": 60,
+        "wires": [
+            [
+                "1d419f2f4c79b1b6"
+            ]
+        ]
+    },
+    {
+        "id": "1d419f2f4c79b1b6",
+        "type": "ui_ui_control",
+        "z": "ff98cff9c7d3b713",
+        "name": "",
+        "events": "all",
+        "x": 980,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "eeda6fa40071816d",
+        "type": "subflow:32615be1060b7f7c",
+        "z": "ff98cff9c7d3b713",
+        "name": "",
+        "x": 320,
+        "y": 100,
+        "wires": [
+            [
+                "72923d95796eb7c1"
+            ],
+            [
+                "0a6584f4f4374b60"
+            ]
+        ]
+    },
+    {
+        "id": "0a6584f4f4374b60",
+        "type": "subflow:1f5453b7e8fbaa8b",
+        "z": "ff98cff9c7d3b713",
+        "name": "",
+        "x": 600,
+        "y": 120,
+        "wires": [
+            [
+                "67228bfa561feb7c"
+            ]
+        ]
+    },
+    {
+        "id": "67228bfa561feb7c",
+        "type": "link out",
+        "z": "ff98cff9c7d3b713",
+        "name": "link out 7",
+        "mode": "link",
+        "links": [
+            "491bd2fb5efaa746"
+        ],
+        "x": 825,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "b5ba2867dba00673",
+        "type": "cloudantplus-selector in",
+        "z": "ff98cff9c7d3b713",
+        "name": "id and rev getter",
+        "cloudant": "706e6a23b7383e7e",
+        "database": "child_tracker",
+        "service": "_ext_",
+        "search": "_query_",
+        "design": "",
+        "index": "",
+        "x": 1220,
+        "y": 220,
+        "wires": [
+            [
+                "9d70b5745f7d7c1d"
+            ]
+        ]
+    },
+    {
+        "id": "9d70b5745f7d7c1d",
+        "type": "function",
+        "z": "ff98cff9c7d3b713",
+        "name": "change password query setter",
+        "func": "var newPassword = msg.formFields.password;\nmsg.payload={\n    \"_id\":msg.payload.docs[0]._id,\n    \"_rev\":msg.payload.docs[0]._rev,\n    \"name\":msg.payload.docs[0].name,\n    \"email\": msg.payload.docs[0].email,\n    \"password\":newPassword,\n    \"dob\":msg.payload.docs[0].dob,\n    \"entry-type\":\"user\"\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1490,
+        "y": 220,
+        "wires": [
+            [
+                "2b73c80b49a77819"
+            ]
+        ]
+    },
+    {
+        "id": "2b73c80b49a77819",
+        "type": "cloudantplus-selector out",
+        "z": "ff98cff9c7d3b713",
+        "name": "",
+        "cloudant": "706e6a23b7383e7e",
+        "database": "child_tracker",
+        "service": "_ext_",
+        "payonly": true,
+        "operation": "insert",
+        "x": 1790,
+        "y": 180,
+        "wires": [
+            [
+                "c98a86ba1bc450a5"
+            ]
+        ]
+    },
+    {
+        "id": "1859f2ab23194986",
+        "type": "ui_toast",
+        "z": "ff98cff9c7d3b713",
+        "position": "top right",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "",
+        "x": 1860,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "c98a86ba1bc450a5",
+        "type": "function",
+        "z": "ff98cff9c7d3b713",
+        "name": "function 37",
+        "func": "if(msg.payload.ok==false){\n    msg.payload=\"Error while changing password\";\n}\nelse{\n    msg.payload=\"Password changed successfully\";\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1770,
+        "y": 280,
+        "wires": [
+            [
+                "1859f2ab23194986"
+            ]
+        ]
+    },
+    {
+        "id": "399fe52b64558508",
+        "type": "function",
+        "z": "ff98cff9c7d3b713",
+        "name": "Form data preserver",
+        "func": "var pass1 = flow.get(\"pass1\");\nvar pass2 = flow.get(\"pass2\");\nmsg.payload={\n    \"pass1\":pass1,\n    \"pass2\":pass2\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 640,
+        "y": 420,
+        "wires": [
+            [
+                "a2087df74fbcb764"
+            ]
+        ]
+    },
+    {
+        "id": "8bce46c4810c1bfb",
+        "type": "link in",
+        "z": "c6fb9636a93b14db",
+        "name": "link to location history",
+        "links": [
+            "59f524fab72e594d"
+        ],
+        "x": 135,
+        "y": 280,
+        "wires": [
+            [
+                "298805ba22491a05",
+                "6641ee30019a7ff4"
+            ]
+        ]
+    },
+    {
+        "id": "86fa0ca1bf74b3fa",
+        "type": "change",
+        "z": "c6fb9636a93b14db",
+        "name": "show or hide groups for location history page",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"group\":{\"show\":[\"Home_ChangePassword\",\"Home_LocationHistory\"],\"hide\":[\"Home_LiveTracker\",\"Home_RecentNotifications\",\"Home_ChangePassword\"]}}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 610,
+        "y": 260,
+        "wires": [
+            [
+                "b708c9bda5b07903"
+            ]
+        ]
+    },
+    {
+        "id": "b708c9bda5b07903",
+        "type": "ui_ui_control",
+        "z": "c6fb9636a93b14db",
+        "name": "",
+        "events": "all",
+        "x": 980,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "298805ba22491a05",
+        "type": "subflow:32615be1060b7f7c",
+        "z": "c6fb9636a93b14db",
+        "name": "",
+        "x": 280,
+        "y": 280,
+        "wires": [
+            [
+                "86fa0ca1bf74b3fa"
+            ],
+            [
+                "7d038697353838c9"
+            ]
+        ]
+    },
+    {
+        "id": "7d038697353838c9",
+        "type": "subflow:1f5453b7e8fbaa8b",
+        "z": "c6fb9636a93b14db",
+        "name": "",
+        "x": 600,
+        "y": 380,
+        "wires": [
+            [
+                "9fbe594df7200d16"
+            ]
+        ]
+    },
+    {
+        "id": "9fbe594df7200d16",
+        "type": "link out",
+        "z": "c6fb9636a93b14db",
+        "name": "link out 3",
+        "mode": "link",
+        "links": [
+            "491bd2fb5efaa746"
+        ],
+        "x": 875,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "1429b3b8b5d19df8",
+        "type": "ui_table",
+        "z": "c6fb9636a93b14db",
+        "group": "e5b0e82851061497",
+        "name": "Location history table",
+        "order": 1,
+        "width": "25",
+        "height": "16",
+        "columns": [
+            {
+                "field": "sNo",
+                "title": "Serial number",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "lat",
+                "title": "Latitude",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "lon",
+                "title": "Longitude",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "date",
+                "title": "Date",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "time",
+                "title": "Time",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "description",
+                "title": "Description",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            }
+        ],
+        "outputs": 0,
+        "cts": false,
+        "x": 1320,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "6641ee30019a7ff4",
+        "type": "function",
+        "z": "c6fb9636a93b14db",
+        "name": "Location history getter query",
+        "func": "msg.payload = \n    {\n        \"selector\":{\n            \"entry-type\":{\n                \"$eq\":\"location\"\n            }\n        },\n        \"fields\":[\"lat\",\"lon\",\"time\",\"description\"]\n    }\n    \nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 440,
+        "y": 140,
+        "wires": [
+            [
+                "3d9f46ee81b90d3d"
+            ]
+        ]
+    },
+    {
+        "id": "3d9f46ee81b90d3d",
+        "type": "cloudantplus-selector in",
+        "z": "c6fb9636a93b14db",
+        "name": "Location documents getter",
+        "cloudant": "706e6a23b7383e7e",
+        "database": "child_tracker",
+        "service": "_ext_",
+        "search": "_query_",
+        "design": "",
+        "index": "",
+        "x": 740,
+        "y": 140,
+        "wires": [
+            [
+                "5210a8a6b7dda0c2"
+            ]
+        ]
+    },
+    {
+        "id": "5210a8a6b7dda0c2",
+        "type": "function",
+        "z": "c6fb9636a93b14db",
+        "name": "Location documents tabilizer",
+        "func": "var locations = msg.payload.docs;\nmsg.payload =[];\nfor(var i=0;i<locations.length;i++){\n    var sNo = i + 1;\n    var date = locations[i].time.substring(0, 10);\n    var time = locations[i].time.substring(11, 20);\n    msg.payload[i]={\n        \"sNo\":sNo,\n        \"lat\":locations[i].lat,\n        \"lon\":locations[i].lon,\n        \"date\":date,\n        \"time\":time,\n        \"description\":locations[i].description\n    }\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1020,
+        "y": 140,
+        "wires": [
+            [
+                "1429b3b8b5d19df8"
+            ]
+        ]
+    },
+    {
+        "id": "59e71afc160f048a",
+        "type": "ibmiot in",
+        "z": "5e0e19af25bdecb3",
+        "authentication": "apiKey",
+        "apiKey": "d3d94c32e7098490",
+        "inputType": "evt",
+        "logicalInterface": "",
+        "ruleId": "",
+        "deviceId": "gps1",
+        "applicationId": "",
+        "deviceType": "+",
+        "eventType": "+",
+        "commandType": "",
+        "format": "json",
+        "name": "IBM IoT",
+        "service": "registered",
+        "allDevices": "",
+        "allApplications": "",
+        "allDeviceTypes": true,
+        "allLogicalInterfaces": "",
+        "allEvents": true,
+        "allCommands": "",
+        "allFormats": "",
+        "qos": 0,
+        "x": 110,
+        "y": 160,
+        "wires": [
+            [
+                "d772a5c51d89efcd",
+                "db8f83a743518a09"
+            ]
+        ]
+    },
+    {
+        "id": "d772a5c51d89efcd",
+        "type": "function",
+        "z": "5e0e19af25bdecb3",
+        "name": "globalSetter",
+        "func": "var latitude = msg.payload.latitude;\nvar longitude = msg.payload.longitude;\nvar name = msg.payload.name;\nglobal.set(\"latitude\",latitude);\nglobal.set(\"longitude\",longitude);\nglobal.set(\"name\",name);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 310,
+        "y": 160,
+        "wires": [
+            [
+                "0fccaf197a197baf",
+                "be7803265eae9fa8"
+            ]
+        ]
+    },
+    {
+        "id": "0fccaf197a197baf",
+        "type": "ui_worldmap",
+        "z": "5e0e19af25bdecb3",
+        "group": "dce348b1bd58454a",
+        "order": 1,
+        "width": 25,
+        "height": "14",
+        "name": "world map",
+        "lat": "17",
+        "lon": "57",
+        "zoom": "4",
+        "layer": "EsriS",
+        "cluster": "15",
+        "maxage": "600",
+        "usermenu": "hide",
+        "layers": "show",
+        "panit": "false",
+        "panlock": "false",
+        "zoomlock": "false",
+        "hiderightclick": "false",
+        "coords": "deg",
+        "showgrid": "false",
+        "showruler": "false",
+        "allowFileDrop": "false",
+        "path": "/worldmap",
+        "overlist": "DR,CO,RA,DN,HM",
+        "maplist": "OSMC,OSMH,EsriC,EsriS,EsriT,EsriO,EsriDG",
+        "mapname": "",
+        "mapurl": "",
+        "mapopt": "",
+        "mapwms": false,
+        "x": 590,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "f27ef887f671162f",
+        "type": "geofence",
+        "z": "5e0e19af25bdecb3",
+        "name": "India",
+        "mode": "polyline",
+        "inside": "both",
+        "rad": 0,
+        "points": [
+            {
+                "latitude": 8.07554603328031,
+                "longitude": 76.98394775390625
+            },
+            {
+                "latitude": 8.94476650635173,
+                "longitude": 78.91754150390625
+            },
+            {
+                "latitude": 11.022080408704667,
+                "longitude": 79.62066650390625
+            },
+            {
+                "latitude": 13.939398640275055,
+                "longitude": 79.79644775390625
+            },
+            {
+                "latitude": 15.638906863563108,
+                "longitude": 80.67535400390625
+            },
+            {
+                "latitude": 16.483497602648132,
+                "longitude": 83.13629150390624
+            },
+            {
+                "latitude": 18.661858919062677,
+                "longitude": 84.36676025390625
+            },
+            {
+                "latitude": 19.988836302380797,
+                "longitude": 86.30035400390625
+            },
+            {
+                "latitude": 21.140868798573802,
+                "longitude": 87.70660400390625
+            },
+            {
+                "latitude": 21.211299542246586,
+                "longitude": 88.37196350097656
+            },
+            {
+                "latitude": 21.620409408075616,
+                "longitude": 89.20692443847656
+            },
+            {
+                "latitude": 22.719190279192095,
+                "longitude": 88.98719787597656
+            },
+            {
+                "latitude": 23.28550352405911,
+                "longitude": 88.81141662597655
+            },
+            {
+                "latitude": 23.80921891713851,
+                "longitude": 88.67958068847655
+            },
+            {
+                "latitude": 24.250720932344837,
+                "longitude": 88.76747131347656
+            },
+            {
+                "latitude": 24.13046187993801,
+                "longitude": 89.82215881347656
+            },
+            {
+                "latitude": 24.969875004555917,
+                "longitude": 89.73426818847656
+            },
+            {
+                "latitude": 25.843157307531634,
+                "longitude": 88.59169006347656
+            },
+            {
+                "latitude": 26.040743577081134,
+                "longitude": 89.55848693847656
+            },
+            {
+                "latitude": 25.248422297214745,
+                "longitude": 90.56922912597656
+            },
+            {
+                "latitude": 24.850303814020997,
+                "longitude": 93.03016662597656
+            },
+            {
+                "latitude": 24.210647182980754,
+                "longitude": 92.23915100097656
+            },
+            {
+                "latitude": 23.76900736083107,
+                "longitude": 91.31629943847656
+            },
+            {
+                "latitude": 22.272576585413475,
+                "longitude": 92.06336975097655
+            },
+            {
+                "latitude": 22.02836476800154,
+                "longitude": 92.85438537597656
+            },
+            {
+                "latitude": 23.043088952569715,
+                "longitude": 93.60145568847656
+            },
+            {
+                "latitude": 23.80921891713851,
+                "longitude": 93.86512756347656
+            },
+            {
+                "latitude": 24.1705608269577,
+                "longitude": 94.21669006347656
+            },
+            {
+                "latitude": 24.250720932344837,
+                "longitude": 96.06239318847655
+            },
+            {
+                "latitude": 24.1705608269577,
+                "longitude": 97.64442443847656
+            },
+            {
+                "latitude": 24.410889551000935,
+                "longitude": 98.08387756347656
+            },
+            {
+                "latitude": 25.129122608158774,
+                "longitude": 98.47938537597655
+            },
+            {
+                "latitude": 26.316805571252356,
+                "longitude": 98.52333068847656
+            },
+            {
+                "latitude": 29.869228848968312,
+                "longitude": 97.3663330078125
+            },
+            {
+                "latitude": 28.950475674848008,
+                "longitude": 86.8194580078125
+            },
+            {
+                "latitude": 29.563901551414418,
+                "longitude": 81.8975830078125
+            },
+            {
+                "latitude": 32.57459172113418,
+                "longitude": 79.7882080078125
+            },
+            {
+                "latitude": 34.6241677899049,
+                "longitude": 79.4366455078125
+            },
+            {
+                "latitude": 35.48751102385376,
+                "longitude": 74.1632080078125
+            },
+            {
+                "latitude": 33.75174787568194,
+                "longitude": 74.1632080078125
+            },
+            {
+                "latitude": 30.173624550358536,
+                "longitude": 73.1085205078125
+            },
+            {
+                "latitude": 26.775039386999605,
+                "longitude": 70.6475830078125
+            },
+            {
+                "latitude": 25.19500042430748,
+                "longitude": 68.1866455078125
+            },
+            {
+                "latitude": 21.647217065387817,
+                "longitude": 69.5928955078125
+            },
+            {
+                "latitude": 19.01019029439606,
+                "longitude": 72.7569580078125
+            }
+        ],
+        "centre": {},
+        "floor": "",
+        "ceiling": "",
+        "worldmap": true,
+        "outputs": 2,
+        "x": 630,
+        "y": 260,
+        "wires": [
+            [
+                "8fe3572ffc0f1483"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "426c17bdca8d99da",
+        "type": "geofence",
+        "z": "5e0e19af25bdecb3",
+        "name": "Australia",
+        "mode": "polyline",
+        "inside": "both",
+        "rad": 0,
+        "points": [
+            {
+                "latitude": -16.26741410165704,
+                "longitude": 124.7882080078125
+            },
+            {
+                "latitude": -18.94785578129412,
+                "longitude": 118.8116455078125
+            },
+            {
+                "latitude": -21.585935114788498,
+                "longitude": 112.8350830078125
+            },
+            {
+                "latitude": -26.71617375793408,
+                "longitude": 112.8350830078125
+            },
+            {
+                "latitude": -31.325486676506955,
+                "longitude": 115.29602050781249
+            },
+            {
+                "latitude": -33.109948297894285,
+                "longitude": 114.2413330078125
+            },
+            {
+                "latitude": -33.40393120023467,
+                "longitude": 120.2178955078125
+            },
+            {
+                "latitude": -33.109948297894285,
+                "longitude": 125.13977050781251
+            },
+            {
+                "latitude": -33.109948297894285,
+                "longitude": 131.4678955078125
+            },
+            {
+                "latitude": -33.40393120023467,
+                "longitude": 136.03820800781247
+            },
+            {
+                "latitude": -36.57142382346275,
+                "longitude": 137.4444580078125
+            },
+            {
+                "latitude": -38.24680876017446,
+                "longitude": 140.2569580078125
+            },
+            {
+                "latitude": -38.79690830348427,
+                "longitude": 145.1788330078125
+            },
+            {
+                "latitude": -34.858890491257796,
+                "longitude": 150.1007080078125
+            },
+            {
+                "latitude": -32.81497839698579,
+                "longitude": 153.6163330078125
+            },
+            {
+                "latitude": -26.401710528707692,
+                "longitude": 154.67102050781247
+            },
+            {
+                "latitude": -17.947380678685203,
+                "longitude": 149.0460205078125
+            },
+            {
+                "latitude": -11.14606637590688,
+                "longitude": 145.5303955078125
+            },
+            {
+                "latitude": -10.455401826918385,
+                "longitude": 139.5538330078125
+            },
+            {
+                "latitude": -8.02659484248955,
+                "longitude": 131.4678955078125
+            },
+            {
+                "latitude": -11.835094475418835,
+                "longitude": 129.0069580078125
+            }
+        ],
+        "centre": {},
+        "floor": "",
+        "ceiling": "",
+        "worldmap": false,
+        "outputs": 1,
+        "x": 860,
+        "y": 360,
+        "wires": [
+            [
+                "83f0c156d3531b33"
+            ]
+        ]
+    },
+    {
+        "id": "4626b532b722c2cf",
+        "type": "geofence",
+        "z": "5e0e19af25bdecb3",
+        "name": "NorthAmerica",
+        "mode": "polyline",
+        "inside": "both",
+        "rad": 0,
+        "points": [
+            {
+                "latitude": 67.35255537048229,
+                "longitude": -164.89929199218747
+            },
+            {
+                "latitude": 62.11929912110062,
+                "longitude": -162.4383544921875
+            },
+            {
+                "latitude": 59.72871575482184,
+                "longitude": -165.2508544921875
+            },
+            {
+                "latitude": 54.996524259832526,
+                "longitude": -153.6492919921875
+            },
+            {
+                "latitude": 58.46497522778118,
+                "longitude": -150.13366699218747
+            },
+            {
+                "latitude": 59.37239142233717,
+                "longitude": -140.2899169921875
+            },
+            {
+                "latitude": 52.50284765940397,
+                "longitude": -131.1492919921875
+            },
+            {
+                "latitude": 41.269549502842565,
+                "longitude": -124.1180419921875
+            },
+            {
+                "latitude": 29.869228848968312,
+                "longitude": -118.1414794921875
+            },
+            {
+                "latitude": 21.320080964008206,
+                "longitude": -111.1102294921875
+            },
+            {
+                "latitude": 13.955392274642316,
+                "longitude": -97.7508544921875
+            },
+            {
+                "latitude": 8.091861780114721,
+                "longitude": -81.2274169921875
+            },
+            {
+                "latitude": 23.594194326203834,
+                "longitude": -95.64147949218749
+            },
+            {
+                "latitude": 28.950475674848008,
+                "longitude": -89.3133544921875
+            },
+            {
+                "latitude": 28.333395169196457,
+                "longitude": -81.5789794921875
+            },
+            {
+                "latitude": 31.98012335736804,
+                "longitude": -75.6024169921875
+            },
+            {
+                "latitude": 40.204050425113294,
+                "longitude": -69.27429199218749
+            },
+            {
+                "latitude": 43.60426186809618,
+                "longitude": -58.7274169921875
+            },
+            {
+                "latitude": 50.757309850294085,
+                "longitude": -51.6961669921875
+            },
+            {
+                "latitude": 58.280619788575805,
+                "longitude": -64.3524169921875
+            },
+            {
+                "latitude": 62.7698107117003,
+                "longitude": -64.0008544921875
+            },
+            {
+                "latitude": 65.38057083630746,
+                "longitude": -59.7821044921875
+            },
+            {
+                "latitude": 69.66854097958829,
+                "longitude": -68.2196044921875
+            },
+            {
+                "latitude": 73.23620856434461,
+                "longitude": -72.0867919921875
+            },
+            {
+                "latitude": 73.93159391454307,
+                "longitude": -95.64147949218749
+            },
+            {
+                "latitude": 73.83399936212712,
+                "longitude": -104.4305419921875
+            },
+            {
+                "latitude": 74.12506488406021,
+                "longitude": -113.9227294921875
+            },
+            {
+                "latitude": 74.69195416677313,
+                "longitude": -121.3055419921875
+            },
+            {
+                "latitude": 74.02861472305722,
+                "longitude": -129.0399169921875
+            },
+            {
+                "latitude": 74.22094748221836,
+                "longitude": -158.2196044921875
+            },
+            {
+                "latitude": 73.43782137829973,
+                "longitude": -165.60241699218747
+            }
+        ],
+        "centre": {},
+        "floor": "",
+        "ceiling": "",
+        "worldmap": false,
+        "outputs": 1,
+        "x": 640,
+        "y": 460,
+        "wires": [
+            [
+                "ee579b5c54bf0347"
+            ]
+        ]
+    },
+    {
+        "id": "d95086598884f6cf",
+        "type": "geofence",
+        "z": "5e0e19af25bdecb3",
+        "name": "SouthAmerica",
+        "mode": "polyline",
+        "inside": "both",
+        "rad": 0,
+        "points": [
+            {
+                "latitude": 11.30770770776545,
+                "longitude": -426.15966796875
+            },
+            {
+                "latitude": 5.747174076651375,
+                "longitude": -448.65966796875
+            },
+            {
+                "latitude": -17.853290114098,
+                "longitude": -443.03466796874994
+            },
+            {
+                "latitude": -44.995882618165446,
+                "longitude": -437.40966796875
+            },
+            {
+                "latitude": -60.17430626192602,
+                "longitude": -428.97216796875
+            },
+            {
+                "latitude": -41.93497650054658,
+                "longitude": -417.72216796875
+            },
+            {
+                "latitude": -24.407137917727653,
+                "longitude": -392.40966796875
+            },
+            {
+                "latitude": -8.276727101164033,
+                "longitude": -391.00341796875
+            },
+            {
+                "latitude": 5.747174076651375,
+                "longitude": -410.69091796875
+            }
+        ],
+        "centre": {},
+        "floor": "",
+        "ceiling": "",
+        "worldmap": false,
+        "outputs": 1,
+        "x": 640,
+        "y": 580,
+        "wires": [
+            [
+                "06e8da45589c88e0"
+            ]
+        ]
+    },
+    {
+        "id": "db224d0f35da5588",
+        "type": "change",
+        "z": "5e0e19af25bdecb3",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "In australia",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1240,
+        "y": 360,
+        "wires": [
+            [
+                "c993fb9f7bb80211"
+            ]
+        ]
+    },
+    {
+        "id": "9e5539502f8f7b11",
+        "type": "change",
+        "z": "5e0e19af25bdecb3",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "In north america",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1100,
+        "y": 480,
+        "wires": [
+            [
+                "76dea31f273e5d16"
+            ]
+        ]
+    },
+    {
+        "id": "ad8195d5f3946dfb",
+        "type": "change",
+        "z": "5e0e19af25bdecb3",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "In India",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1120,
+        "y": 200,
+        "wires": [
+            [
+                "72c824cb162b9a75"
+            ]
+        ]
+    },
+    {
+        "id": "8fe3572ffc0f1483",
+        "type": "subflow:700a64323a039d33",
+        "z": "5e0e19af25bdecb3",
+        "name": "GeoFenceInOut",
+        "x": 880,
+        "y": 260,
+        "wires": [
+            [
+                "ad8195d5f3946dfb"
+            ],
+            [
+                "7c984d7e56e8ccac"
+            ]
+        ]
+    },
+    {
+        "id": "19ca187865ec5824",
+        "type": "rbe",
+        "z": "5e0e19af25bdecb3",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "septopics": true,
+        "property": "payload",
+        "topi": "topic",
+        "x": 430,
+        "y": 320,
+        "wires": [
+            [
+                "f27ef887f671162f"
+            ]
+        ]
+    },
+    {
+        "id": "ee579b5c54bf0347",
+        "type": "subflow:700a64323a039d33",
+        "z": "5e0e19af25bdecb3",
+        "name": "GeoFenceInOut",
+        "x": 880,
+        "y": 480,
+        "wires": [
+            [
+                "9e5539502f8f7b11"
+            ],
+            [
+                "344de6e09b168283"
+            ]
+        ]
+    },
+    {
+        "id": "83f0c156d3531b33",
+        "type": "subflow:700a64323a039d33",
+        "z": "5e0e19af25bdecb3",
+        "name": "GeoFenceInOut",
+        "x": 1040,
+        "y": 360,
+        "wires": [
+            [
+                "db224d0f35da5588"
+            ],
+            [
+                "dfcc3f47863180e2"
+            ]
+        ]
+    },
+    {
+        "id": "06e8da45589c88e0",
+        "type": "subflow:700a64323a039d33",
+        "z": "5e0e19af25bdecb3",
+        "name": "GeoFenceInOut",
+        "x": 860,
+        "y": 580,
+        "wires": [
+            [
+                "3bea338a937a7fe5"
+            ],
+            [
+                "510136b11747b265"
+            ]
+        ]
+    },
+    {
+        "id": "627efda782fa6970",
+        "type": "ui_toast",
+        "z": "5e0e19af25bdecb3",
+        "position": "top right",
+        "displayTime": "5",
+        "highlight": "red",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": true,
+        "className": "",
+        "topic": "msg.payload",
+        "name": "Location notification",
+        "x": 2340,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "72c824cb162b9a75",
+        "type": "function",
+        "z": "5e0e19af25bdecb3",
+        "name": "India description setter",
+        "func": "msg.payload = \"Child is at India!\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1440,
+        "y": 260,
+        "wires": [
+            [
+                "05a65b5fb3107606"
+            ]
+        ]
+    },
+    {
+        "id": "c993fb9f7bb80211",
+        "type": "function",
+        "z": "5e0e19af25bdecb3",
+        "name": "Australia description setter",
+        "func": "msg.payload = \"Child is at Australia!\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1480,
+        "y": 360,
+        "wires": [
+            [
+                "05a65b5fb3107606"
+            ]
+        ]
+    },
+    {
+        "id": "76dea31f273e5d16",
+        "type": "function",
+        "z": "5e0e19af25bdecb3",
+        "name": "North america description setter",
+        "func": "msg.payload = \"Child is at north america!\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1350,
+        "y": 480,
+        "wires": [
+            [
+                "05a65b5fb3107606"
+            ]
+        ]
+    },
+    {
+        "id": "3bea338a937a7fe5",
+        "type": "function",
+        "z": "5e0e19af25bdecb3",
+        "name": "South america description setter",
+        "func": "msg.payload = \"Child is at south america!\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1290,
+        "y": 580,
+        "wires": [
+            [
+                "05a65b5fb3107606"
+            ]
+        ]
+    },
+    {
+        "id": "b4df085776420690",
+        "type": "geofence",
+        "z": "5e0e19af25bdecb3",
+        "name": "Africa",
+        "mode": "polyline",
+        "inside": "both",
+        "rad": 0,
+        "points": [
+            {
+                "latitude": 33.37824452444234,
+                "longitude": -364.26488399505615
+            },
+            {
+                "latitude": 29.785353671767805,
+                "longitude": -371.6476964950561
+            },
+            {
+                "latitude": 18.9187553225016,
+                "longitude": -376.92113399505615
+            },
+            {
+                "latitude": 11.80498188397162,
+                "longitude": -379.3820714950561
+            },
+            {
+                "latitude": 5.902371215251163,
+                "longitude": -371.99925899505615
+            },
+            {
+                "latitude": 4.501949024509783,
+                "longitude": -361.45238399505615
+            },
+            {
+                "latitude": 4.852340265562087,
+                "longitude": -353.7180089950561
+            },
+            {
+                "latitude": 2.0452166082286944,
+                "longitude": -348.79613399505615
+            },
+            {
+                "latitude": -5.67940041069108,
+                "longitude": -345.28050899505615
+            },
+            {
+                "latitude": -9.165012702445436,
+                "longitude": -347.74144649505615
+            },
+            {
+                "latitude": -16.360204311916597,
+                "longitude": -349.8508214950561
+            },
+            {
+                "latitude": -22.327722768623758,
+                "longitude": -348.79613399505615
+            },
+            {
+                "latitude": -28.977392678249466,
+                "longitude": -344.5773839950561
+            },
+            {
+                "latitude": -32.89619595621958,
+                "longitude": -341.76488399505615
+            },
+            {
+                "latitude": -32.60051331634306,
+                "longitude": -333.67894649505615
+            },
+            {
+                "latitude": -26.48827674734423,
+                "longitude": -327.70238399505615
+            },
+            {
+                "latitude": -20.692409100918688,
+                "longitude": -325.59300899505615
+            },
+            {
+                "latitude": -17.704738007318976,
+                "longitude": -321.37425899505615
+            },
+            {
+                "latitude": -10.204653739979051,
+                "longitude": -320.67113399505615
+            },
+            {
+                "latitude": -7.425660887787361,
+                "longitude": -319.26488399505615
+            },
+            {
+                "latitude": -2.1725781039666154,
+                "longitude": -316.45238399505615
+            },
+            {
+                "latitude": 0.9909141762748036,
+                "longitude": -312.23363399505615
+            },
+            {
+                "latitude": 3.8006731993985983,
+                "longitude": -309.77269649505615
+            },
+            {
+                "latitude": 9.732876779992084,
+                "longitude": -308.71800899505615
+            },
+            {
+                "latitude": 13.177907504618677,
+                "longitude": -305.90550899505615
+            },
+            {
+                "latitude": 16.91178278998905,
+                "longitude": -301.33519649505615
+            },
+            {
+                "latitude": 23.82755836080531,
+                "longitude": -304.14769649505615
+            }
+        ],
+        "centre": {},
+        "floor": "",
+        "ceiling": "",
+        "worldmap": false,
+        "outputs": 1,
+        "x": 630,
+        "y": 660,
+        "wires": [
+            [
+                "e876ea1fd760bb15"
+            ]
+        ]
+    },
+    {
+        "id": "e876ea1fd760bb15",
+        "type": "subflow:700a64323a039d33",
+        "z": "5e0e19af25bdecb3",
+        "name": "GeoFenceInOu",
+        "x": 880,
+        "y": 660,
+        "wires": [
+            [
+                "5aa2c0e2a2f344c2"
+            ],
+            [
+                "e251c2ec84535a57"
+            ]
+        ]
+    },
+    {
+        "id": "5aa2c0e2a2f344c2",
+        "type": "change",
+        "z": "5e0e19af25bdecb3",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "In South America",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1100,
+        "y": 660,
+        "wires": [
+            [
+                "72b0418ccf3d26d4"
+            ]
+        ]
+    },
+    {
+        "id": "72b0418ccf3d26d4",
+        "type": "function",
+        "z": "5e0e19af25bdecb3",
+        "name": "Africa description setter",
+        "func": "msg.payload = \"Child is at Africa\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1350,
+        "y": 660,
+        "wires": [
+            [
+                "05a65b5fb3107606"
+            ]
+        ]
+    },
+    {
+        "id": "ebf5b0a751803ba2",
+        "type": "geofence",
+        "z": "5e0e19af25bdecb3",
+        "name": "Indian ocean",
+        "mode": "polyline",
+        "inside": "both",
+        "rad": 0,
+        "points": [
+            {
+                "latitude": 7.853585373168333,
+                "longitude": -282.3277544975281
+            },
+            {
+                "latitude": 9.244175422886327,
+                "longitude": -301.4879107475281
+            },
+            {
+                "latitude": 8.201702287214239,
+                "longitude": -307.640254497528
+            },
+            {
+                "latitude": -1.0864843411051632,
+                "longitude": -313.0894732475281
+            },
+            {
+                "latitude": -8.61252520064465,
+                "longitude": -316.7808794975281
+            },
+            {
+                "latitude": -10.000230005962415,
+                "longitude": -308.3433794975281
+            },
+            {
+                "latitude": -13.783671120123515,
+                "longitude": -307.2886919975281
+            },
+            {
+                "latitude": -16.1608672830738,
+                "longitude": -308.3433794975281
+            },
+            {
+                "latitude": -21.155215278763944,
+                "longitude": -308.5191607475281
+            },
+            {
+                "latitude": -24.87547466863372,
+                "longitude": -310.9800982475281
+            },
+            {
+                "latitude": -27.087496467423723,
+                "longitude": -317.8355669975281
+            },
+            {
+                "latitude": -26.61701596404722,
+                "longitude": -323.109004497528
+            },
+            {
+                "latitude": -28.332429563771655,
+                "longitude": -327.8550982475281
+            },
+            {
+                "latitude": -33.458027522876506,
+                "longitude": -329.2613482475281
+            },
+            {
+                "latitude": -37.18570462282059,
+                "longitude": -325.7457232475281
+            },
+            {
+                "latitude": -37.4652678754975,
+                "longitude": -318.7144732475281
+            },
+            {
+                "latitude": -37.4652678754975,
+                "longitude": -309.3980669975281
+            },
+            {
+                "latitude": -37.4652678754975,
+                "longitude": -306.0582232475281
+            },
+            {
+                "latitude": -37.743789647957364,
+                "longitude": -285.3160357475281
+            },
+            {
+                "latitude": -37.4652678754975,
+                "longitude": -277.7574419975281
+            },
+            {
+                "latitude": -38.159613704650816,
+                "longitude": -258.4215044975281
+            },
+            {
+                "latitude": -38.02126726308395,
+                "longitude": -250.68712949752808
+            },
+            {
+                "latitude": -35.19984837785159,
+                "longitude": -251.03869199752805
+            },
+            {
+                "latitude": -22.62313954887061,
+                "longitude": -258.5972857475281
+            },
+            {
+                "latitude": -17.84178826867099,
+                "longitude": -258.5972857475281
+            },
+            {
+                "latitude": -6.346966178544381,
+                "longitude": -261.0582232475281
+            },
+            {
+                "latitude": -3.0187456055096518,
+                "longitude": -263.8707232475281
+            },
+            {
+                "latitude": 2.779547148407145,
+                "longitude": -267.2105669975281
+            },
+            {
+                "latitude": 6.283628960934076,
+                "longitude": -273.7144732475281
+            },
+            {
+                "latitude": 5.234279592877393,
+                "longitude": -280.042598247528
+            }
+        ],
+        "centre": {},
+        "floor": "",
+        "ceiling": "",
+        "worldmap": false,
+        "outputs": 1,
+        "x": 670,
+        "y": 740,
+        "wires": [
+            [
+                "a83933660c032537"
+            ]
+        ]
+    },
+    {
+        "id": "a83933660c032537",
+        "type": "subflow:700a64323a039d33",
+        "z": "5e0e19af25bdecb3",
+        "name": "GeoFenceInOut",
+        "x": 900,
+        "y": 740,
+        "wires": [
+            [
+                "6d54e3425be3c00a"
+            ],
+            [
+                "354d5e6ce4928e37"
+            ]
+        ]
+    },
+    {
+        "id": "6d54e3425be3c00a",
+        "type": "change",
+        "z": "5e0e19af25bdecb3",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "In South America",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1140,
+        "y": 720,
+        "wires": [
+            [
+                "0680d0e45d2b1da8"
+            ]
+        ]
+    },
+    {
+        "id": "0680d0e45d2b1da8",
+        "type": "function",
+        "z": "5e0e19af25bdecb3",
+        "name": "Indian Ocean description setter",
+        "func": "msg.payload = \"Child is at indian ocean\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1390,
+        "y": 720,
+        "wires": [
+            [
+                "05a65b5fb3107606"
+            ]
+        ]
+    },
+    {
+        "id": "da098738329551cf",
+        "type": "function",
+        "z": "5e0e19af25bdecb3",
+        "name": "China description setter",
+        "func": "msg.payload = \"Child is at china\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1330,
+        "y": 820,
+        "wires": [
+            [
+                "05a65b5fb3107606"
+            ]
+        ]
+    },
+    {
+        "id": "bd182df05d055c99",
+        "type": "change",
+        "z": "5e0e19af25bdecb3",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "In South America",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1040,
+        "y": 820,
+        "wires": [
+            [
+                "da098738329551cf"
+            ]
+        ]
+    },
+    {
+        "id": "bb6736dcf0acbcd0",
+        "type": "subflow:700a64323a039d33",
+        "z": "5e0e19af25bdecb3",
+        "name": "GeoFenceInOut",
+        "x": 800,
+        "y": 840,
+        "wires": [
+            [
+                "bd182df05d055c99"
+            ],
+            [
+                "e4bcb73fe98a3085"
+            ]
+        ]
+    },
+    {
+        "id": "e26af351ee32c240",
+        "type": "geofence",
+        "z": "5e0e19af25bdecb3",
+        "name": "China",
+        "mode": "polyline",
+        "inside": "both",
+        "rad": 0,
+        "points": [
+            {
+                "latitude": 47.732672332445,
+                "longitude": -273.7144732475281
+            },
+            {
+                "latitude": 47.01846426884263,
+                "longitude": -275.1207232475281
+            },
+            {
+                "latitude": 47.01846426884263,
+                "longitude": -276.8785357475281
+            },
+            {
+                "latitude": 45.92899254852994,
+                "longitude": -277.9332232475281
+            },
+            {
+                "latitude": 45.31430045803772,
+                "longitude": -279.6910357475281
+            },
+            {
+                "latitude": 43.68455684571311,
+                "longitude": -280.5699419975281
+            },
+            {
+                "latitude": 42.009304149062324,
+                "longitude": -279.1636919975281
+            },
+            {
+                "latitude": 40.95583982428579,
+                "longitude": -281.6246294975281
+            },
+            {
+                "latitude": 39.88529196220289,
+                "longitude": -284.7886919975281
+            },
+            {
+                "latitude": 37.41467167657936,
+                "longitude": -285.843379497528
+            },
+            {
+                "latitude": 35.43471375425503,
+                "longitude": -282.5035357475281
+            },
+            {
+                "latitude": 33.40484700168555,
+                "longitude": -282.1519732475281
+            },
+            {
+                "latitude": 32.37160940958229,
+                "longitude": -280.3941607475281
+            },
+            {
+                "latitude": 31.17614842413613,
+                "longitude": -277.2300982475281
+            },
+            {
+                "latitude": 30.723891873892526,
+                "longitude": -275.4722857475281
+            },
+            {
+                "latitude": 28.2763244053611,
+                "longitude": -271.0777544975281
+            },
+            {
+                "latitude": 29.96540323663796,
+                "longitude": -263.8707232475281
+            },
+            {
+                "latitude": 29.96540323663796,
+                "longitude": -262.640254497528
+            },
+            {
+                "latitude": 27.499499803239132,
+                "longitude": -259.8277544975281
+            },
+            {
+                "latitude": 25.929393626877946,
+                "longitude": -260.8824419975281
+            },
+            {
+                "latitude": 24.1778259455337,
+                "longitude": -258.9488482475281
+            },
+            {
+                "latitude": 23.212066502311266,
+                "longitude": -257.8941607475281
+            },
+            {
+                "latitude": 24.338086516845138,
+                "longitude": -256.6636919975281
+            },
+            {
+                "latitude": 24.65799916784089,
+                "longitude": -252.26916074752808
+            },
+            {
+                "latitude": 23.69583926146008,
+                "longitude": -249.98400449752808
+            },
+            {
+                "latitude": 23.69583926146008,
+                "longitude": -248.75353574752808
+            },
+            {
+                "latitude": 24.017363873421154,
+                "longitude": -247.17150449752805
+            },
+            {
+                "latitude": 24.1778259455337,
+                "longitude": -244.1832232475281
+            },
+            {
+                "latitude": 27.18721801237076,
+                "longitude": -242.42541074752805
+            },
+            {
+                "latitude": 30.26950371327816,
+                "longitude": -241.54650449752808
+            },
+            {
+                "latitude": 33.25798074894576,
+                "longitude": -241.37072324752805
+            },
+            {
+                "latitude": 35.29136398850529,
+                "longitude": -240.3160357475281
+            },
+            {
+                "latitude": 37.41467167657936,
+                "longitude": -238.73400449752808
+            },
+            {
+                "latitude": 40.15452532688166,
+                "longitude": -241.72228574752808
+            },
+            {
+                "latitude": 40.15452532688166,
+                "longitude": -238.03087949752805
+            },
+            {
+                "latitude": 40.02004143489873,
+                "longitude": -235.56994199752805
+            },
+            {
+                "latitude": 40.288743422142026,
+                "longitude": -231.52697324752808
+            },
+            {
+                "latitude": 42.39993226881676,
+                "longitude": -227.48400449752808
+            },
+            {
+                "latitude": 44.56777248425749,
+                "longitude": -226.42931699752808
+            },
+            {
+                "latitude": 47.01846426884263,
+                "longitude": -225.37462949752808
+            },
+            {
+                "latitude": 47.732672332445,
+                "longitude": -226.07775449752808
+            },
+            {
+                "latitude": 47.732672332445,
+                "longitude": -228.53869199752808
+            },
+            {
+                "latitude": 50.38120204257337,
+                "longitude": -231.52697324752808
+            },
+            {
+                "latitude": 52.3561437224978,
+                "longitude": -232.93322324752808
+            },
+            {
+                "latitude": 53.41673402414666,
+                "longitude": -235.04259824752805
+            },
+            {
+                "latitude": 53.41673402414666,
+                "longitude": -239.26134824752808
+            },
+            {
+                "latitude": 51.26947552473745,
+                "longitude": -239.26134824752808
+            },
+            {
+                "latitude": 49.817428676079786,
+                "longitude": -241.01916074752808
+            },
+            {
+                "latitude": 49.13212622019971,
+                "longitude": -242.77697324752805
+            },
+            {
+                "latitude": 48.553704308927884,
+                "longitude": -243.83166074752805
+            },
+            {
+                "latitude": 47.01846426884263,
+                "longitude": -241.01916074752808
+            },
+            {
+                "latitude": 46.1729826542968,
+                "longitude": -244.53478574752808
+            },
+            {
+                "latitude": 44.56777248425749,
+                "longitude": -246.81994199752808
+            },
+            {
+                "latitude": 43.42978460622668,
+                "longitude": -248.75353574752808
+            },
+            {
+                "latitude": 41.61626247520322,
+                "longitude": -250.86291074752808
+            },
+            {
+                "latitude": 41.48471286381801,
+                "longitude": -254.20275449752808
+            },
+            {
+                "latitude": 41.878558257678094,
+                "longitude": -259.8277544975281
+            },
+            {
+                "latitude": 43.173935413557956,
+                "longitude": -264.573848247528
+            },
+            {
+                "latitude": 44.817693700093365,
+                "longitude": -265.6285357475281
+            },
+            {
+                "latitude": 45.92899254852994,
+                "longitude": -267.7379107475281
+            },
+            {
+                "latitude": 47.3767775147995,
+                "longitude": -269.4957232475281
+            },
+            {
+                "latitude": 48.20344144657038,
+                "longitude": -270.374629497528
+            }
+        ],
+        "centre": {},
+        "floor": "",
+        "ceiling": "",
+        "worldmap": false,
+        "outputs": 1,
+        "x": 590,
+        "y": 840,
+        "wires": [
+            [
+                "bb6736dcf0acbcd0"
+            ]
+        ]
+    },
+    {
+        "id": "12637b590ee8da3a",
+        "type": "link in",
+        "z": "5e0e19af25bdecb3",
+        "name": "link to Live tracker",
+        "links": [
+            "30cc3840a56f1ee7"
+        ],
+        "x": 145,
+        "y": 80,
+        "wires": [
+            [
+                "7798f715e3f51a2d"
+            ]
+        ]
+    },
+    {
+        "id": "ab53676535b0602a",
+        "type": "change",
+        "z": "5e0e19af25bdecb3",
+        "name": "show or hide groups for live tracker page",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"group\":{\"hide\":[\"Home_Login\",\"Home_ChangePassword\",\"SignUpSuccess\",\"Home_SignupForm\",\"Home_LocationHistory\",\"Home_RecentNotifications\",\"Home_ChangePassword\"],\"show\":[\"Home_HomeMenuButtons\",\"Home_LiveTracker\"]}}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 560,
+        "y": 40,
+        "wires": [
+            [
+                "de85098b60fa9955"
+            ]
+        ]
+    },
+    {
+        "id": "de85098b60fa9955",
+        "type": "ui_ui_control",
+        "z": "5e0e19af25bdecb3",
+        "name": "",
+        "events": "all",
+        "x": 960,
+        "y": 40,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7798f715e3f51a2d",
+        "type": "subflow:32615be1060b7f7c",
+        "z": "5e0e19af25bdecb3",
+        "name": "",
+        "x": 280,
+        "y": 80,
+        "wires": [
+            [
+                "ab53676535b0602a"
+            ],
+            [
+                "483d5073a9f4838e"
+            ]
+        ]
+    },
+    {
+        "id": "483d5073a9f4838e",
+        "type": "subflow:1f5453b7e8fbaa8b",
+        "z": "5e0e19af25bdecb3",
+        "name": "",
+        "x": 560,
+        "y": 100,
+        "wires": [
+            [
+                "dea4482681bc10c5"
+            ]
+        ]
+    },
+    {
+        "id": "dea4482681bc10c5",
+        "type": "link out",
+        "z": "5e0e19af25bdecb3",
+        "name": "link out 4",
+        "mode": "link",
+        "links": [
+            "491bd2fb5efaa746"
+        ],
+        "x": 785,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "e4000205bb88b622",
+        "type": "cloudantplus-selector out",
+        "z": "5e0e19af25bdecb3",
+        "name": "Location storer",
+        "cloudant": "706e6a23b7383e7e",
+        "database": "child_tracker",
+        "service": "_ext_",
+        "payonly": true,
+        "operation": "insert",
+        "x": 2180,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "05a65b5fb3107606",
+        "type": "function",
+        "z": "5e0e19af25bdecb3",
+        "name": "location document creator",
+        "func": "var latitude = global.get(\"latitude\");\nvar longitude = global.get(\"longitude\");\nvar time = new Date().toLocaleString('en-US', { timeZone: 'Asia/Kolkata' });\nvar description = msg.payload;\nmsg.payload = {\n    \"lat\":latitude,\n    \"lon\":longitude,\n    \"time\":time,\n    \"description\":description,\n    \"entry-type\":\"location\"\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1750,
+        "y": 440,
+        "wires": [
+            [
+                "518062854bea5765"
+            ]
+        ]
+    },
+    {
+        "id": "80f97a4dba65b844",
+        "type": "function",
+        "z": "5e0e19af25bdecb3",
+        "name": "function 35",
+        "func": "msg.payload=msg.payload.description;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2030,
+        "y": 520,
+        "wires": [
+            [
+                "ae0da20d5dfa7afc"
+            ]
+        ]
+    },
+    {
+        "id": "e4bcb73fe98a3085",
+        "type": "function",
+        "z": "5e0e19af25bdecb3",
+        "name": "Unknown area description setter",
+        "func": "msg.payload = \"The child is in unknown area\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1150,
+        "y": 880,
+        "wires": [
+            [
+                "05a65b5fb3107606"
+            ]
+        ]
+    },
+    {
+        "id": "7c984d7e56e8ccac",
+        "type": "subflow:df127433b8c2d631",
+        "z": "5e0e19af25bdecb3",
+        "name": "",
+        "x": 660,
+        "y": 360,
+        "wires": [
+            [
+                "426c17bdca8d99da"
+            ]
+        ]
+    },
+    {
+        "id": "be7803265eae9fa8",
+        "type": "subflow:df127433b8c2d631",
+        "z": "5e0e19af25bdecb3",
+        "name": "",
+        "x": 260,
+        "y": 320,
+        "wires": [
+            [
+                "19ca187865ec5824"
+            ]
+        ]
+    },
+    {
+        "id": "dfcc3f47863180e2",
+        "type": "subflow:df127433b8c2d631",
+        "z": "5e0e19af25bdecb3",
+        "name": "",
+        "x": 460,
+        "y": 460,
+        "wires": [
+            [
+                "4626b532b722c2cf"
+            ]
+        ]
+    },
+    {
+        "id": "344de6e09b168283",
+        "type": "subflow:df127433b8c2d631",
+        "z": "5e0e19af25bdecb3",
+        "name": "",
+        "x": 400,
+        "y": 580,
+        "wires": [
+            [
+                "d95086598884f6cf"
+            ]
+        ]
+    },
+    {
+        "id": "510136b11747b265",
+        "type": "subflow:df127433b8c2d631",
+        "z": "5e0e19af25bdecb3",
+        "name": "",
+        "x": 380,
+        "y": 660,
+        "wires": [
+            [
+                "b4df085776420690"
+            ]
+        ]
+    },
+    {
+        "id": "e251c2ec84535a57",
+        "type": "subflow:df127433b8c2d631",
+        "z": "5e0e19af25bdecb3",
+        "name": "",
+        "x": 440,
+        "y": 740,
+        "wires": [
+            [
+                "ebf5b0a751803ba2"
+            ]
+        ]
+    },
+    {
+        "id": "354d5e6ce4928e37",
+        "type": "subflow:df127433b8c2d631",
+        "z": "5e0e19af25bdecb3",
+        "name": "",
+        "x": 380,
+        "y": 840,
+        "wires": [
+            [
+                "e26af351ee32c240"
+            ]
+        ]
+    },
+    {
+        "id": "518062854bea5765",
+        "type": "delay",
+        "z": "5e0e19af25bdecb3",
+        "name": "",
+        "pauseType": "rate",
+        "timeout": "1",
+        "timeoutUnits": "minutes",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "minute",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": true,
+        "allowrate": true,
+        "outputs": 1,
+        "x": 1910,
+        "y": 380,
+        "wires": [
+            [
+                "e4000205bb88b622",
+                "80f97a4dba65b844"
+            ]
+        ]
+    },
+    {
+        "id": "ae0da20d5dfa7afc",
+        "type": "subflow:32615be1060b7f7c",
+        "z": "5e0e19af25bdecb3",
+        "name": "",
+        "x": 2140,
+        "y": 600,
+        "wires": [
+            [
+                "627efda782fa6970"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "db8f83a743518a09",
+        "type": "debug",
+        "z": "5e0e19af25bdecb3",
+        "name": "debug 19",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 160,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "e30ee69175cbd21f",
+        "type": "ibmiot in",
+        "z": "6d5315ce248df928",
+        "authentication": "apiKey",
+        "apiKey": "d3d94c32e7098490",
+        "inputType": "evt",
+        "logicalInterface": "",
+        "ruleId": "",
+        "deviceId": "childTrackerButton1",
+        "applicationId": "",
+        "deviceType": "+",
+        "eventType": "+",
+        "commandType": "",
+        "format": "json",
+        "name": "Button click",
+        "service": "registered",
+        "allDevices": "",
+        "allApplications": "",
+        "allDeviceTypes": true,
+        "allLogicalInterfaces": "",
+        "allEvents": true,
+        "allCommands": "",
+        "allFormats": "",
+        "qos": 0,
+        "x": 350,
+        "y": 300,
+        "wires": [
+            [
+                "4c3598d5d5c3677b",
+                "60d853de9332667c"
+            ]
+        ]
+    },
+    {
+        "id": "72b789f29c853172",
+        "type": "ui_toast",
+        "z": "6d5315ce248df928",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "red",
+        "sendall": true,
+        "outputs": 1,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "Child notification",
+        "topic": "msg.payload",
+        "name": "Child notification!",
+        "x": 1170,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4c3598d5d5c3677b",
+        "type": "subflow:32615be1060b7f7c",
+        "z": "6d5315ce248df928",
+        "name": "",
+        "x": 620,
+        "y": 260,
+        "wires": [
+            [
+                "9b39013d4ee62893"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "9b39013d4ee62893",
+        "type": "function",
+        "z": "6d5315ce248df928",
+        "name": "Warning message setter",
+        "func": "msg.payload = \"Child is in emergency situation!\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 890,
+        "y": 260,
+        "wires": [
+            [
+                "72b789f29c853172"
+            ]
+        ]
+    },
+    {
+        "id": "adc70d9a0de95424",
+        "type": "cloudantplus-selector out",
+        "z": "6d5315ce248df928",
+        "name": "",
+        "cloudant": "706e6a23b7383e7e",
+        "database": "child_tracker",
+        "service": "_ext_",
+        "payonly": true,
+        "operation": "insert",
+        "x": 850,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "60d853de9332667c",
+        "type": "function",
+        "z": "6d5315ce248df928",
+        "name": "notification document creator",
+        "func": "var lat = msg.payload.lat;\nvar lon = msg.payload.lon;\nmsg.payload={\n    \"time\": new Date().toLocaleString('en-US', { timeZone: 'Asia/Kolkata' }),\n    \"lat\":lat,\n    \"lon\":lon,\n    \"entry-type\":\"notification\"\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 400,
+        "wires": [
+            [
+                "adc70d9a0de95424",
+                "5d30468665601f27"
+            ]
+        ]
+    },
+    {
+        "id": "5d30468665601f27",
+        "type": "debug",
+        "z": "6d5315ce248df928",
+        "name": "debug 16",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 620,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "ffb6237abc275cda",
+        "type": "ui_button",
+        "z": "684ad947b5bb77ec",
+        "d": true,
+        "name": "",
+        "group": "",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "button",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 610,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "04e851881f6b3f5e",
+        "type": "ui_dropdown",
+        "z": "684ad947b5bb77ec",
+        "d": true,
+        "name": "",
+        "label": "",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "e35970a12a18e9ae",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "Show",
+                "value": true,
+                "type": "bool"
+            },
+            {
+                "label": "Hide",
+                "value": false,
+                "type": "bool"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 740,
+        "y": 440,
+        "wires": [
+            [
+                "4711a6a7f56f4306"
+            ]
+        ]
+    },
+    {
+        "id": "4711a6a7f56f4306",
+        "type": "switch",
+        "z": "684ad947b5bb77ec",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "false"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 930,
+        "y": 440,
+        "wires": [
+            [
+                "3993962adf013239"
+            ],
+            [
+                "9df18973d31bd770"
+            ]
+        ]
+    },
+    {
+        "id": "cb654ad2ce3997e5",
+        "type": "ui_ui_control",
+        "z": "684ad947b5bb77ec",
+        "name": "",
+        "events": "all",
+        "x": 1320,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3993962adf013239",
+        "type": "change",
+        "z": "684ad947b5bb77ec",
+        "name": "Show Group2",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"group\":{\"show\":[\"Tab3_Group1\"]}}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1120,
+        "y": 400,
+        "wires": [
+            [
+                "cb654ad2ce3997e5",
+                "2a897c12e0e624a9"
+            ]
+        ]
+    },
+    {
+        "id": "9df18973d31bd770",
+        "type": "change",
+        "z": "684ad947b5bb77ec",
+        "name": "Show group2",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"group\":{\"hide\":[\"Tab3_Group1\"]}}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1130,
+        "y": 480,
+        "wires": [
+            [
+                "cb654ad2ce3997e5"
+            ]
+        ]
+    },
+    {
+        "id": "2a897c12e0e624a9",
+        "type": "debug",
+        "z": "684ad947b5bb77ec",
+        "name": "debug 12",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1460,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "495b28822cf843e7",
+        "type": "link in",
+        "z": "fa35390fd425e7e7",
+        "name": "link to home",
+        "links": [
+            "d7f7ba7a475fabaf",
+            "63cd32631759d904",
+            "dda93fbca03005c8",
+            "7f3b70454f6d880d",
+            "f7f0faca9e87dd84"
+        ],
+        "x": 235,
+        "y": 180,
+        "wires": [
+            [
+                "bce6ce180ce806a4"
+            ]
+        ]
+    },
+    {
+        "id": "78537267b1fc606f",
+        "type": "ui_button",
+        "z": "fa35390fd425e7e7",
+        "name": "Live tracker",
+        "group": "56a42a68015d00ae",
+        "order": 1,
+        "width": 5,
+        "height": 1,
+        "passthru": false,
+        "label": "Live tracking",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 390,
+        "y": 440,
+        "wires": [
+            [
+                "30cc3840a56f1ee7"
+            ]
+        ]
+    },
+    {
+        "id": "1b1c0834eecf6fe3",
+        "type": "ui_button",
+        "z": "fa35390fd425e7e7",
+        "name": "Recent notifications",
+        "group": "56a42a68015d00ae",
+        "order": 3,
+        "width": 5,
+        "height": 1,
+        "passthru": false,
+        "label": "Recent emergency notifications",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 630,
+        "y": 440,
+        "wires": [
+            [
+                "0c7ee9036db45e58"
+            ]
+        ]
+    },
+    {
+        "id": "558fdca2bbf18a5d",
+        "type": "ui_button",
+        "z": "fa35390fd425e7e7",
+        "name": "Location history",
+        "group": "56a42a68015d00ae",
+        "order": 2,
+        "width": 5,
+        "height": 1,
+        "passthru": false,
+        "label": "Location history",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 920,
+        "y": 440,
+        "wires": [
+            [
+                "59f524fab72e594d"
+            ]
+        ]
+    },
+    {
+        "id": "59f524fab72e594d",
+        "type": "link out",
+        "z": "fa35390fd425e7e7",
+        "name": "homeToLocationHistory",
+        "mode": "link",
+        "links": [
+            "8bce46c4810c1bfb"
+        ],
+        "x": 1055,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "0c7ee9036db45e58",
+        "type": "link out",
+        "z": "fa35390fd425e7e7",
+        "name": "homeToRecentNotifications",
+        "mode": "link",
+        "links": [
+            "cc89bf53e468dcc2"
+        ],
+        "x": 775,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "471df7fa9b085a27",
+        "type": "ui_button",
+        "z": "fa35390fd425e7e7",
+        "name": "Logout",
+        "group": "56a42a68015d00ae",
+        "order": 5,
+        "width": 5,
+        "height": 1,
+        "passthru": false,
+        "label": "Logout",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1190,
+        "y": 500,
+        "wires": [
+            [
+                "c053ee73c2c26383"
+            ]
+        ]
+    },
+    {
+        "id": "bce6ce180ce806a4",
+        "type": "subflow:32615be1060b7f7c",
+        "z": "fa35390fd425e7e7",
+        "name": "",
+        "x": 380,
+        "y": 180,
+        "wires": [
+            [
+                "30cc3840a56f1ee7"
+            ],
+            [
+                "684ae685fdcfead8"
+            ]
+        ]
+    },
+    {
+        "id": "30cc3840a56f1ee7",
+        "type": "link out",
+        "z": "fa35390fd425e7e7",
+        "name": "link to live tracker",
+        "mode": "link",
+        "links": [
+            "12637b590ee8da3a",
+            "ce2448d7e78aaa98"
+        ],
+        "x": 685,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "684ae685fdcfead8",
+        "type": "subflow:1f5453b7e8fbaa8b",
+        "z": "fa35390fd425e7e7",
+        "name": "",
+        "x": 300,
+        "y": 320,
+        "wires": [
+            [
+                "4541b6e53cf23b68"
+            ]
+        ]
+    },
+    {
+        "id": "4541b6e53cf23b68",
+        "type": "link out",
+        "z": "fa35390fd425e7e7",
+        "name": "home link to login 1",
+        "mode": "link",
+        "links": [
+            "491bd2fb5efaa746"
+        ],
+        "x": 505,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "c053ee73c2c26383",
+        "type": "subflow:1f5453b7e8fbaa8b",
+        "z": "fa35390fd425e7e7",
+        "name": "",
+        "x": 1340,
+        "y": 580,
+        "wires": [
+            [
+                "325514b1eab56575"
+            ]
+        ]
+    },
+    {
+        "id": "325514b1eab56575",
+        "type": "link out",
+        "z": "fa35390fd425e7e7",
+        "name": "home link to login 2",
+        "mode": "link",
+        "links": [
+            "491bd2fb5efaa746"
+        ],
+        "x": 1545,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "3336be4a7a541056",
+        "type": "ui_button",
+        "z": "fa35390fd425e7e7",
+        "name": "",
+        "group": "56a42a68015d00ae",
+        "order": 4,
+        "width": 5,
+        "height": 1,
+        "passthru": false,
+        "label": "Change password",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 970,
+        "y": 300,
+        "wires": [
+            [
+                "33e4c00cc9abcbba"
+            ]
+        ]
+    },
+    {
+        "id": "33e4c00cc9abcbba",
+        "type": "link out",
+        "z": "fa35390fd425e7e7",
+        "name": "link out 6",
+        "mode": "link",
+        "links": [
+            "8709ea52fc5bec57"
+        ],
+        "x": 1175,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "cc89bf53e468dcc2",
+        "type": "link in",
+        "z": "b4bcf42eae449190",
+        "name": "link to recent notifications",
+        "links": [
+            "0c7ee9036db45e58"
+        ],
+        "x": 255,
+        "y": 300,
+        "wires": [
+            [
+                "f959f85ce9cf1262",
+                "ca12978f86fefe16"
+            ]
+        ]
+    },
+    {
+        "id": "678735cd50316c20",
+        "type": "ui_table",
+        "z": "b4bcf42eae449190",
+        "group": "cfdd9986a17c2a12",
+        "name": "Recent notifications",
+        "order": 1,
+        "width": 25,
+        "height": "19",
+        "columns": [
+            {
+                "field": "sNo",
+                "title": "Serial number",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "lat",
+                "title": "latitude",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "lon",
+                "title": "longitude",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "time",
+                "title": "Time",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "date",
+                "title": "Date",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            }
+        ],
+        "outputs": 0,
+        "cts": false,
+        "x": 1430,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "ca12978f86fefe16",
+        "type": "function",
+        "z": "b4bcf42eae449190",
+        "name": "Recent notifications getter query",
+        "func": "msg.payload = \n    {\n        \"selector\":{\n            \"entry-type\":{\n                \"$eq\":\"notification\"\n            }\n        },\n        \"fields\":[\"lat\",\"lon\",\"time\"]\n    }\n    \nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 510,
+        "y": 420,
+        "wires": [
+            [
+                "1964272e77d984bc"
+            ]
+        ]
+    },
+    {
+        "id": "346562b0e570119a",
+        "type": "change",
+        "z": "b4bcf42eae449190",
+        "name": "show and hide groups for recent notifications",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"group\":{\"show\":[\"Home_ChangePassword\",\"Home_RecentNotifications\"],\"hide\":[\"Home_LiveTracker\",\"Home_LocationHistory\",\"Home_ChangePassword\"]}}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 770,
+        "y": 200,
+        "wires": [
+            [
+                "e2eff78fe6675b1e"
+            ]
+        ]
+    },
+    {
+        "id": "e2eff78fe6675b1e",
+        "type": "ui_ui_control",
+        "z": "b4bcf42eae449190",
+        "name": "",
+        "events": "all",
+        "x": 1060,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f959f85ce9cf1262",
+        "type": "subflow:32615be1060b7f7c",
+        "z": "b4bcf42eae449190",
+        "name": "",
+        "x": 440,
+        "y": 220,
+        "wires": [
+            [
+                "346562b0e570119a"
+            ],
+            [
+                "b3cb1da083eece36"
+            ]
+        ]
+    },
+    {
+        "id": "b3cb1da083eece36",
+        "type": "subflow:1f5453b7e8fbaa8b",
+        "z": "b4bcf42eae449190",
+        "name": "",
+        "x": 720,
+        "y": 300,
+        "wires": [
+            [
+                "cda223a4ec0c2b5c"
+            ]
+        ]
+    },
+    {
+        "id": "cda223a4ec0c2b5c",
+        "type": "link out",
+        "z": "b4bcf42eae449190",
+        "name": "link out 2",
+        "mode": "link",
+        "links": [
+            "491bd2fb5efaa746"
+        ],
+        "x": 995,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "1964272e77d984bc",
+        "type": "cloudantplus-selector in",
+        "z": "b4bcf42eae449190",
+        "name": "notification documents getter",
+        "cloudant": "706e6a23b7383e7e",
+        "database": "child_tracker",
+        "service": "_ext_",
+        "search": "_query_",
+        "design": "",
+        "index": "",
+        "x": 880,
+        "y": 420,
+        "wires": [
+            [
+                "8df2981db765ca4e"
+            ]
+        ]
+    },
+    {
+        "id": "8df2981db765ca4e",
+        "type": "function",
+        "z": "b4bcf42eae449190",
+        "name": "notifications tabilifier",
+        "func": "if(msg.payload.docs==null){\n    return msg;\n}\nvar notifications = msg.payload.docs;\nmsg.payload =[];\nfor(var i=0;i<notifications.length;i++){\n    var sNo = i+1;\n    var date = notifications[i].time.substring(0,10);\n    var time = notifications[i].time.substring(11,19);\n    var latitude = notifications[i].lat;\n    var longitude = notifications[i].lon;\n    msg.payload[i]={\n        \"sNo\":sNo,\n        \"lat\":latitude,\n        \"lon\":longitude,\n        \"date\":date,\n        \"time\":time\n    }\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1180,
+        "y": 400,
+        "wires": [
+            [
+                "678735cd50316c20"
+            ]
+        ]
+    },
+    {
+        "id": "566b3922e82b9ffe",
+        "type": "link in",
+        "z": "68e3898e17f59f01",
+        "name": "link to signup",
+        "links": [
+            "22c250883aeb39f7",
+            "b343a7375795bf93",
+            "2070f46b81454f64"
+        ],
+        "x": 115,
+        "y": 160,
+        "wires": [
+            [
+                "224c6aed50bb4b31"
+            ]
+        ]
+    },
+    {
+        "id": "5aa10331d33dee96",
+        "type": "comment",
+        "z": "68e3898e17f59f01",
+        "name": "Signup",
+        "info": "",
+        "x": 110,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "1512b28f050661f3",
+        "type": "ui_text",
+        "z": "68e3898e17f59f01",
+        "group": "9f0413c4fd8e8912",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "Signup sucess",
+        "label": "Signup success",
+        "format": "\"Signup successfull\"",
+        "layout": "row-left",
+        "className": "",
+        "x": 1380,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "2b02520f5e975f83",
+        "type": "ui_button",
+        "z": "68e3898e17f59f01",
+        "name": "Login button",
+        "group": "8ce4f1c0714bed75",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Login",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "{}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1170,
+        "y": 560,
+        "wires": [
+            [
+                "cd32c6980fdf0ce2",
+                "ffb228f7839a1e18",
+                "513a4a2f462c3928"
+            ]
+        ]
+    },
+    {
+        "id": "f7a4a16a6a1b7340",
+        "type": "link out",
+        "z": "68e3898e17f59f01",
+        "name": "link out to login",
+        "mode": "link",
+        "links": [
+            "491bd2fb5efaa746"
+        ],
+        "x": 1765,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "ffb228f7839a1e18",
+        "type": "change",
+        "z": "68e3898e17f59f01",
+        "name": "Hide or show group setter 2",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"group\":{\"hide\":[\"Home_SignupForm\",\"Home_SignUpSuccess\"],\"show\":[\"Home_Login\"]}}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1420,
+        "y": 580,
+        "wires": [
+            [
+                "4c628e248541628b"
+            ]
+        ]
+    },
+    {
+        "id": "4c628e248541628b",
+        "type": "ui_ui_control",
+        "z": "68e3898e17f59f01",
+        "name": "",
+        "events": "change",
+        "x": 1660,
+        "y": 580,
+        "wires": [
+            [
+                "f7a4a16a6a1b7340"
+            ]
+        ]
+    },
+    {
+        "id": "491cb6a7a50e13f2",
+        "type": "ui_button",
+        "z": "68e3898e17f59f01",
+        "name": "Signup success page Login button",
+        "group": "9f0413c4fd8e8912",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Login",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "{}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1160,
+        "y": 500,
+        "wires": [
+            [
+                "cd32c6980fdf0ce2"
+            ]
+        ]
+    },
+    {
+        "id": "f0328334bf08e79b",
+        "type": "comment",
+        "z": "68e3898e17f59f01",
+        "name": "Valid signup ",
+        "info": "",
+        "x": 990,
+        "y": 20,
+        "wires": []
+    },
+    {
+        "id": "46b1cf29b662a763",
+        "type": "comment",
+        "z": "68e3898e17f59f01",
+        "name": "If already logged in redirect to home",
+        "info": "",
+        "x": 1420,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "cd32c6980fdf0ce2",
+        "type": "subflow:32615be1060b7f7c",
+        "z": "68e3898e17f59f01",
+        "name": "",
+        "x": 1500,
+        "y": 500,
+        "wires": [
+            [
+                "f7f0faca9e87dd84"
+            ],
+            [
+                "ffb228f7839a1e18"
+            ]
+        ]
+    },
+    {
+        "id": "f7f0faca9e87dd84",
+        "type": "link out",
+        "z": "68e3898e17f59f01",
+        "name": "signup to home",
+        "mode": "link",
+        "links": [
+            "495b28822cf843e7"
+        ],
+        "x": 1645,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "224c6aed50bb4b31",
+        "type": "ui_form",
+        "z": "68e3898e17f59f01",
+        "name": "SignUp",
+        "label": "",
+        "group": "8ce4f1c0714bed75",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "Name",
+                "value": "name",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Email ",
+                "value": "email",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "D.O.B",
+                "value": "dob",
+                "type": "date",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Password",
+                "value": "pass1",
+                "type": "password",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Re-enter password",
+                "value": "pass2",
+                "type": "password",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "name": "",
+            "email": "",
+            "dob": "",
+            "pass1": "",
+            "pass2": ""
+        },
+        "payload": "",
+        "submit": "SignUp",
+        "cancel": "Reset",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": "",
+        "className": "",
+        "x": 220,
+        "y": 160,
+        "wires": [
+            [
+                "73c05f324d7ec5a6"
+            ]
+        ]
+    },
+    {
+        "id": "73c05f324d7ec5a6",
+        "type": "function",
+        "z": "68e3898e17f59f01",
+        "name": "client side validations",
+        "func": "var email = msg.payload.email;\nvar password1 = msg.payload.pass1;\nvar password2 = msg.payload.pass2;\nvar dob = msg.payload.dob;\nflow.set(\"email\",email);\nflow.set(\"pass1\",password1);\nflow.set(\"pass2\",password2);\nflow.set(\"dob\",dob);\nif(password1.length<8){\n    msg.payload.warning = \"Passwords must contain atleast 8 characters\";\n}\nelse if(password1!=password2){\n    msg.payload.warning = \"Passwords doesn't match\";\n}\nelse{\n    msg.payload.warning = null;\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 160,
+        "wires": [
+            [
+                "7b98170d0d8d4de9"
+            ]
+        ]
+    },
+    {
+        "id": "45209815527b0945",
+        "type": "ui_toast",
+        "z": "68e3898e17f59f01",
+        "position": "top right",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "",
+        "x": 1660,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "1b92133ee6e6792b",
+        "type": "subflow:7ebdbadd2fa727b7",
+        "z": "68e3898e17f59f01",
+        "name": "",
+        "x": 870,
+        "y": 120,
+        "wires": [
+            [
+                "1512b28f050661f3",
+                "491cb6a7a50e13f2",
+                "777aa07d47e075ec",
+                "f7213c82eccfcdad"
+            ],
+            [
+                "d959c440e672cd72",
+                "8d83c12e84830910"
+            ]
+        ]
+    },
+    {
+        "id": "7b98170d0d8d4de9",
+        "type": "switch",
+        "z": "68e3898e17f59f01",
+        "name": "Warning switcher",
+        "property": "payload.warning",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "null"
+            },
+            {
+                "t": "nnull"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 650,
+        "y": 160,
+        "wires": [
+            [
+                "1b92133ee6e6792b"
+            ],
+            [
+                "6bb4d2b3bb6f081e",
+                "8d83c12e84830910"
+            ]
+        ]
+    },
+    {
+        "id": "6bb4d2b3bb6f081e",
+        "type": "function",
+        "z": "68e3898e17f59f01",
+        "name": "warning setter",
+        "func": "msg.payload=msg.payload.warning;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1360,
+        "y": 220,
+        "wires": [
+            [
+                "45209815527b0945"
+            ]
+        ]
+    },
+    {
+        "id": "777aa07d47e075ec",
+        "type": "change",
+        "z": "68e3898e17f59f01",
+        "name": "Hide or show group setter 1",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"group\":{\"hide\":[\"Home_SignupForm\"],\"show\":[\"Home_SignUpSuccess\"]}}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1420,
+        "y": 120,
+        "wires": [
+            [
+                "1a4b279e96b20a14"
+            ]
+        ]
+    },
+    {
+        "id": "1a4b279e96b20a14",
+        "type": "ui_ui_control",
+        "z": "68e3898e17f59f01",
+        "name": "",
+        "events": "all",
+        "x": 1640,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f7213c82eccfcdad",
+        "type": "function",
+        "z": "68e3898e17f59f01",
+        "name": "Signup success message",
+        "func": "msg.payload=\"Signup success!\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1410,
+        "y": 160,
+        "wires": [
+            [
+                "45209815527b0945"
+            ]
+        ]
+    },
+    {
+        "id": "2faf23b231de0d80",
+        "type": "function",
+        "z": "68e3898e17f59f01",
+        "name": "Signup Form data preserver",
+        "func": "var name = flow.get(\"name\");\nvar email = flow.get(\"email\");\nvar dob = flow.get(\"dob\");\nvar pass1 = flow.get(\"pass1\");\nvar pass2 = flow.get(\"pass2\");\nmsg.payload={\n    \"name\":name,\n    \"email\":email,\n    \"dob\":dob,\n    \"pass1\":pass1,\n    \"pass2\":pass2\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 300,
+        "wires": [
+            [
+                "2070f46b81454f64"
+            ]
+        ]
+    },
+    {
+        "id": "d959c440e672cd72",
+        "type": "function",
+        "z": "68e3898e17f59f01",
+        "name": "already registered email warning setter",
+        "func": "msg.payload.warning = \"Email is already registered!\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 950,
+        "y": 240,
+        "wires": [
+            [
+                "6bb4d2b3bb6f081e"
+            ]
+        ]
+    },
+    {
+        "id": "388da78db955a905",
+        "type": "link in",
+        "z": "68e3898e17f59f01",
+        "name": "link to signup form data preserver",
+        "links": [
+            "8d83c12e84830910"
+        ],
+        "x": 265,
+        "y": 300,
+        "wires": [
+            [
+                "2faf23b231de0d80"
+            ]
+        ]
+    },
+    {
+        "id": "8d83c12e84830910",
+        "type": "link out",
+        "z": "68e3898e17f59f01",
+        "name": "email already registered ",
+        "mode": "link",
+        "links": [
+            "388da78db955a905"
+        ],
+        "x": 1055,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "f8648cf236decd03",
+        "type": "link in",
+        "z": "68e3898e17f59f01",
+        "name": "link to reset signup form data",
+        "links": [
+            "513a4a2f462c3928"
+        ],
+        "x": 595,
+        "y": 660,
+        "wires": [
+            [
+                "96a6e2c5cc7e66d2"
+            ]
+        ]
+    },
+    {
+        "id": "96a6e2c5cc7e66d2",
+        "type": "function",
+        "z": "68e3898e17f59f01",
+        "name": "Reset signup form data",
+        "func": "msg.payload={};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 810,
+        "y": 660,
+        "wires": [
+            [
+                "b343a7375795bf93"
+            ]
+        ]
+    },
+    {
+        "id": "b343a7375795bf93",
+        "type": "link out",
+        "z": "68e3898e17f59f01",
+        "name": "reset signup form",
+        "mode": "link",
+        "links": [
+            "566b3922e82b9ffe"
+        ],
+        "x": 1005,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "2070f46b81454f64",
+        "type": "link out",
+        "z": "68e3898e17f59f01",
+        "name": "signup form preserver to signup form",
+        "mode": "link",
+        "links": [
+            "566b3922e82b9ffe"
+        ],
+        "x": 725,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "513a4a2f462c3928",
+        "type": "link out",
+        "z": "68e3898e17f59f01",
+        "name": "resert form data",
+        "mode": "link",
+        "links": [
+            "f8648cf236decd03"
+        ],
+        "x": 1285,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "2a61da6564bc79da",
+        "type": "comment",
+        "z": "d16297ee91306ed1",
+        "name": "home page director",
+        "info": "",
+        "x": 410,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "9e715840cc79c9c3",
+        "type": "comment",
+        "z": "d16297ee91306ed1",
+        "name": "check if valid login credentials",
+        "info": "",
+        "x": 1020,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "d7f7ba7a475fabaf",
+        "type": "link out",
+        "z": "d16297ee91306ed1",
+        "name": "link to home",
+        "mode": "link",
+        "links": [
+            "495b28822cf843e7"
+        ],
+        "x": 1695,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "1ea2e1fd75f4ecf8",
+        "type": "comment",
+        "z": "d16297ee91306ed1",
+        "name": "Directed to home page",
+        "info": "",
+        "x": 1480,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "a9d64d68947c29f2",
+        "type": "comment",
+        "z": "d16297ee91306ed1",
+        "name": "",
+        "info": "\"Home_SignupForm\",\"Home_LocationHistory\",\"Home_SignUpSuccess\",\"Home_HomeMenuButtons\",",
+        "x": 100,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "72e85977b95a16c8",
+        "type": "ui_form",
+        "z": "d16297ee91306ed1",
+        "name": "Login form",
+        "label": "",
+        "group": "6665df2b7775eee3",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "Email",
+                "value": "email",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Password ",
+                "value": "password",
+                "type": "password",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "email": "",
+            "password": ""
+        },
+        "payload": "",
+        "submit": "Login",
+        "cancel": "Reset",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": false,
+        "className": "",
+        "x": 230,
+        "y": 340,
+        "wires": [
+            [
+                "4a332879024f6a22"
+            ]
+        ]
+    },
+    {
+        "id": "a55349cfee3fdd85",
+        "type": "ui_button",
+        "z": "d16297ee91306ed1",
+        "name": "SignUp button",
+        "group": "6665df2b7775eee3",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Sign up",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 220,
+        "y": 640,
+        "wires": [
+            [
+                "a6e53c1d36d8d3d6",
+                "7b79ce84c8d8425f"
+            ]
+        ]
+    },
+    {
+        "id": "28340d3f77502e69",
+        "type": "ui_ui_control",
+        "z": "d16297ee91306ed1",
+        "name": "",
+        "events": "change",
+        "x": 1040,
+        "y": 680,
+        "wires": [
+            [
+                "22c250883aeb39f7"
+            ]
+        ]
+    },
+    {
+        "id": "14e0eff2aaa57d58",
+        "type": "function",
+        "z": "d16297ee91306ed1",
+        "name": "hide login form and show signup form",
+        "func": "msg.payload = { \"group\": { \"hide\": [\"Home_Login\"] ,\"show\":[\"Home_LoginMenuDirector\",\"Home_SignupForm\"]}};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 790,
+        "y": 680,
+        "wires": [
+            [
+                "28340d3f77502e69"
+            ]
+        ]
+    },
+    {
+        "id": "22c250883aeb39f7",
+        "type": "link out",
+        "z": "d16297ee91306ed1",
+        "name": "loginToSignup",
+        "mode": "link",
+        "links": [
+            "566b3922e82b9ffe"
+        ],
+        "x": 1185,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "c737c69f38fb9317",
+        "type": "comment",
+        "z": "d16297ee91306ed1",
+        "name": "signup director",
+        "info": "",
+        "x": 380,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "1f819cd6cac5fbdd",
+        "type": "ui_ui_control",
+        "z": "d16297ee91306ed1",
+        "name": "",
+        "events": "change",
+        "x": 1060,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6290c7481172a8ab",
+        "type": "change",
+        "z": "d16297ee91306ed1",
+        "name": "Hide and show group setters for Login page",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"group\":{\"show\":[\"Home_Login\"],\"hide\":[\"Home_ChangePassword\",\"Home_SignupForm\",\"Home_LocationHistory\",\"Home_SignUpSuccess\",\"Home_HomeMenuButtons\",\"Home_LiveTracker\",\"Home_LocationHistory\",\"Home_RecentNotifications\"]}}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 770,
+        "y": 220,
+        "wires": [
+            [
+                "1f819cd6cac5fbdd"
+            ]
+        ]
+    },
+    {
+        "id": "a0226009a7ae8014",
+        "type": "comment",
+        "z": "d16297ee91306ed1",
+        "name": "On page load",
+        "info": "",
+        "x": 350,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "704ab2e9b8adcbc0",
+        "type": "comment",
+        "z": "d16297ee91306ed1",
+        "name": "If already logged in redirect to home",
+        "info": "",
+        "x": 660,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "491bd2fb5efaa746",
+        "type": "link in",
+        "z": "d16297ee91306ed1",
+        "name": "link to login",
+        "links": [
+            "f7a4a16a6a1b7340",
+            "cda223a4ec0c2b5c",
+            "9fbe594df7200d16",
+            "dea4482681bc10c5",
+            "4541b6e53cf23b68",
+            "325514b1eab56575",
+            "67228bfa561feb7c"
+        ],
+        "x": 195,
+        "y": 180,
+        "wires": [
+            [
+                "e62fa6df08f42272"
+            ]
+        ]
+    },
+    {
+        "id": "17f2a67e1ddea191",
+        "type": "function",
+        "z": "d16297ee91306ed1",
+        "name": "Set context email",
+        "func": "var email = msg.payload.email;\nglobal.set(\"email\",email);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1450,
+        "y": 380,
+        "wires": [
+            [
+                "d7f7ba7a475fabaf"
+            ]
+        ]
+    },
+    {
+        "id": "7f3b70454f6d880d",
+        "type": "link out",
+        "z": "d16297ee91306ed1",
+        "name": "login to home 2",
+        "mode": "link",
+        "links": [
+            "495b28822cf843e7"
+        ],
+        "x": 675,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "dda93fbca03005c8",
+        "type": "link out",
+        "z": "d16297ee91306ed1",
+        "name": "Login to home1",
+        "mode": "link",
+        "links": [
+            "495b28822cf843e7"
+        ],
+        "x": 635,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "4a332879024f6a22",
+        "type": "function",
+        "z": "d16297ee91306ed1",
+        "name": "form data set in flow scope",
+        "func": "var email = msg.payload.email;\nvar password = msg.payload.password;\nflow.set(\"email\",email);\nflow.set(\"password\",password);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 480,
+        "y": 340,
+        "wires": [
+            [
+                "b487e28cabe69cda"
+            ]
+        ]
+    },
+    {
+        "id": "e62fa6df08f42272",
+        "type": "subflow:32615be1060b7f7c",
+        "z": "d16297ee91306ed1",
+        "name": "",
+        "x": 400,
+        "y": 200,
+        "wires": [
+            [
+                "dda93fbca03005c8"
+            ],
+            [
+                "6290c7481172a8ab"
+            ]
+        ]
+    },
+    {
+        "id": "b487e28cabe69cda",
+        "type": "subflow:32615be1060b7f7c",
+        "z": "d16297ee91306ed1",
+        "name": "",
+        "x": 720,
+        "y": 340,
+        "wires": [
+            [
+                "d7f7ba7a475fabaf"
+            ],
+            [
+                "9f789ec4089290e1",
+                "736aad2e2746bd76"
+            ]
+        ]
+    },
+    {
+        "id": "a6e53c1d36d8d3d6",
+        "type": "subflow:32615be1060b7f7c",
+        "z": "d16297ee91306ed1",
+        "name": "",
+        "x": 480,
+        "y": 640,
+        "wires": [
+            [
+                "7f3b70454f6d880d"
+            ],
+            [
+                "14e0eff2aaa57d58"
+            ]
+        ]
+    },
+    {
+        "id": "822d34a3649f4542",
+        "type": "subflow:e0571323139eb71d",
+        "z": "d16297ee91306ed1",
+        "name": "",
+        "x": 540,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "9889d1cd43ac11fb",
+        "type": "ui_toast",
+        "z": "d16297ee91306ed1",
+        "position": "top right",
+        "displayTime": "3",
+        "highlight": "red",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "msg.payload",
+        "name": "Wrong credentials notifier",
+        "x": 1530,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "0997157c430c730e",
+        "type": "inject",
+        "z": "d16297ee91306ed1",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 280,
+        "y": 800,
+        "wires": [
+            [
+                "822d34a3649f4542"
+            ]
+        ]
+    },
+    {
+        "id": "9f789ec4089290e1",
+        "type": "link out",
+        "z": "d16297ee91306ed1",
+        "name": "link out 5",
+        "mode": "link",
+        "links": [
+            "839352e236f8d605"
+        ],
+        "x": 815,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "736aad2e2746bd76",
+        "type": "subflow:07cdddf4fb9a8917",
+        "z": "d16297ee91306ed1",
+        "name": "",
+        "x": 1020,
+        "y": 380,
+        "wires": [
+            [
+                "17f2a67e1ddea191"
+            ],
+            [
+                "701173f0a70b58ba",
+                "15bc8680c7367d66"
+            ]
+        ]
+    },
+    {
+        "id": "701173f0a70b58ba",
+        "type": "function",
+        "z": "d16297ee91306ed1",
+        "name": "function 32",
+        "func": "msg.payload = msg.payload.message;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1270,
+        "y": 460,
+        "wires": [
+            [
+                "9889d1cd43ac11fb"
+            ]
+        ]
+    },
+    {
+        "id": "15bc8680c7367d66",
+        "type": "function",
+        "z": "d16297ee91306ed1",
+        "name": "Form data preserver",
+        "func": "var email = flow.get(\"email\");\nvar password = flow.get(\"password\");\nmsg.payload={\n    \"email\":email,\n    \"password\":password\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 440,
+        "wires": [
+            [
+                "c2d2953b8182920d"
+            ]
+        ]
+    },
+    {
+        "id": "fcd78dd1e743516a",
+        "type": "link in",
+        "z": "d16297ee91306ed1",
+        "name": "link to login form",
+        "links": [
+            "6cddf08e62a5fe0d",
+            "c2d2953b8182920d"
+        ],
+        "x": 45,
+        "y": 340,
+        "wires": [
+            [
+                "72e85977b95a16c8"
+            ]
+        ]
+    },
+    {
+        "id": "c2d2953b8182920d",
+        "type": "link out",
+        "z": "d16297ee91306ed1",
+        "name": "form data preserver to login form",
+        "mode": "link",
+        "links": [],
+        "x": 695,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "112c266a1ec45170",
+        "type": "link in",
+        "z": "d16297ee91306ed1",
+        "name": "link to reset login form",
+        "links": [
+            "7b79ce84c8d8425f"
+        ],
+        "x": 865,
+        "y": 820,
+        "wires": [
+            [
+                "3cd201a28eb88503"
+            ]
+        ]
+    },
+    {
+        "id": "3cd201a28eb88503",
+        "type": "function",
+        "z": "d16297ee91306ed1",
+        "name": "reset login form",
+        "func": "msg.payload={};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1020,
+        "y": 820,
+        "wires": [
+            [
+                "6cddf08e62a5fe0d"
+            ]
+        ]
+    },
+    {
+        "id": "6cddf08e62a5fe0d",
+        "type": "link out",
+        "z": "d16297ee91306ed1",
+        "name": "reset login form to login form",
+        "mode": "link",
+        "links": [
+            "fcd78dd1e743516a"
+        ],
+        "x": 1195,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "7b79ce84c8d8425f",
+        "type": "link out",
+        "z": "d16297ee91306ed1",
+        "name": "signup button to login form reset",
+        "mode": "link",
+        "links": [
+            "112c266a1ec45170"
+        ],
+        "x": 365,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "c1be4d639770f0a6",
+        "type": "http in",
+        "z": "7cbf2efbe14a9622",
+        "name": "",
+        "url": "/users",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 310,
+        "y": 240,
+        "wires": [
+            [
+                "7c4e2aaf1f678241",
+                "e9564f5095fd0f1f"
+            ]
+        ]
+    },
+    {
+        "id": "7c4e2aaf1f678241",
+        "type": "cloudantplus-selector out",
+        "z": "7cbf2efbe14a9622",
+        "name": "",
+        "cloudant": "706e6a23b7383e7e",
+        "database": "child_tracker",
+        "service": "_ext_",
+        "payonly": true,
+        "operation": "insert",
+        "x": 610,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "40d12b46b555f010",
+        "type": "http in",
+        "z": "7cbf2efbe14a9622",
+        "name": "",
+        "url": "/users",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 320,
+        "y": 400,
+        "wires": [
+            [
+                "337171d53f6e46ce"
+            ]
+        ]
+    },
+    {
+        "id": "65bb789fd8ed6d3f",
+        "type": "http response",
+        "z": "7cbf2efbe14a9622",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 790,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "337171d53f6e46ce",
+        "type": "cloudantplus-selector in",
+        "z": "7cbf2efbe14a9622",
+        "name": "",
+        "cloudant": "706e6a23b7383e7e",
+        "database": "child_tracker",
+        "service": "_ext_",
+        "search": "_all_",
+        "design": "",
+        "index": "",
+        "x": 530,
+        "y": 400,
+        "wires": [
+            [
+                "65bb789fd8ed6d3f"
+            ]
+        ]
+    },
+    {
+        "id": "e9564f5095fd0f1f",
+        "type": "http response",
+        "z": "7cbf2efbe14a9622",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 510,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "bc57e5437af08cb0",
+        "type": "comment",
+        "z": "7cbf2efbe14a9622",
+        "name": "POST",
+        "info": "",
+        "x": 250,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "d79e4792f9493746",
+        "type": "comment",
+        "z": "7cbf2efbe14a9622",
+        "name": "GET",
+        "info": "",
+        "x": 250,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "09b2faf02b82c2df",
+        "type": "http in",
+        "z": "7cbf2efbe14a9622",
+        "name": "",
+        "url": "/users",
+        "method": "delete",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 330,
+        "y": 580,
+        "wires": [
+            [
+                "5953b1ae794a3782",
+                "fcded6cf453a51e7"
+            ]
+        ]
+    },
+    {
+        "id": "5953b1ae794a3782",
+        "type": "cloudantplus-selector out",
+        "z": "7cbf2efbe14a9622",
+        "name": "",
+        "cloudant": "706e6a23b7383e7e",
+        "database": "child_tracker",
+        "service": "_ext_",
+        "payonly": false,
+        "operation": "delete",
+        "x": 750,
+        "y": 600,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fcded6cf453a51e7",
+        "type": "http response",
+        "z": "7cbf2efbe14a9622",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 550,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "fc034117c0ecbdcf",
+        "type": "comment",
+        "z": "7cbf2efbe14a9622",
+        "name": "DELETE",
+        "info": "",
+        "x": 240,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "4c216fc3785cb051",
+        "type": "http in",
+        "z": "7cbf2efbe14a9622",
+        "name": "",
+        "url": "/users",
+        "method": "put",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 300,
+        "y": 760,
+        "wires": [
+            [
+                "ae198f37ccd6c9aa",
+                "4f07ef4956cc4c71"
+            ]
+        ]
+    },
+    {
+        "id": "ae198f37ccd6c9aa",
+        "type": "cloudantplus-selector out",
+        "z": "7cbf2efbe14a9622",
+        "name": "",
+        "cloudant": "706e6a23b7383e7e",
+        "database": "child_tracker",
+        "service": "_ext_",
+        "payonly": true,
+        "operation": "insert",
+        "x": 630,
+        "y": 780,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4f07ef4956cc4c71",
+        "type": "http response",
+        "z": "7cbf2efbe14a9622",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 490,
+        "y": 880,
+        "wires": []
+    },
+    {
+        "id": "1cf40ff6e597dcad",
+        "type": "comment",
+        "z": "7cbf2efbe14a9622",
+        "name": "UPDATE",
+        "info": "",
+        "x": 220,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "92ebca193b48006f",
+        "type": "http in",
+        "z": "7cbf2efbe14a9622",
+        "name": "",
+        "url": "/users/:id",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 990,
+        "y": 600,
+        "wires": [
+            [
+                "e602c00f7cfb700a"
+            ]
+        ]
+    },
+    {
+        "id": "cb1a3bec3fca77cb",
+        "type": "comment",
+        "z": "7cbf2efbe14a9622",
+        "name": "SEARCH",
+        "info": "",
+        "x": 1120,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "a003f683c8b9ae87",
+        "type": "cloudantplus-selector in",
+        "z": "7cbf2efbe14a9622",
+        "name": "",
+        "cloudant": "706e6a23b7383e7e",
+        "database": "child_tracker",
+        "service": "_ext_",
+        "search": "_id_",
+        "design": "",
+        "index": "",
+        "x": 1570,
+        "y": 560,
+        "wires": [
+            [
+                "979cdd6ba69ea6a6"
+            ]
+        ]
+    },
+    {
+        "id": "e602c00f7cfb700a",
+        "type": "function",
+        "z": "7cbf2efbe14a9622",
+        "name": "function 27",
+        "func": "msg.payload._id = msg.req.params.id;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1230,
+        "y": 560,
+        "wires": [
+            [
+                "a003f683c8b9ae87",
+                "c2563c60a0370da7"
+            ]
+        ]
+    },
+    {
+        "id": "c2563c60a0370da7",
+        "type": "debug",
+        "z": "7cbf2efbe14a9622",
+        "name": "debug 14",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1420,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "979cdd6ba69ea6a6",
+        "type": "http response",
+        "z": "7cbf2efbe14a9622",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 1730,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "1fe588204c3ae8e2",
+        "type": "http in",
+        "z": "60ed8df9984e056d",
+        "name": "getEmailDocument",
+        "url": "/getUser/:email",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 310,
+        "y": 120,
+        "wires": [
+            [
+                "293185f1dcae785c"
+            ]
+        ]
+    },
+    {
+        "id": "1aae1f62c7cdbe76",
+        "type": "debug",
+        "z": "60ed8df9984e056d",
+        "name": "debug 15",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 820,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "293185f1dcae785c",
+        "type": "subflow:07cdddf4fb9a8917",
+        "z": "60ed8df9984e056d",
+        "name": "",
+        "x": 600,
+        "y": 120,
+        "wires": [
+            [
+                "1aae1f62c7cdbe76"
+            ],
+            [
+                "1aae1f62c7cdbe76"
+            ]
+        ]
+    },
+    {
+        "id": "396b0a44a967e0b4",
+        "type": "comment",
+        "z": "60ed8df9984e056d",
+        "name": "Login Validator",
+        "info": "",
+        "x": 300,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "379103b6d6389747",
+        "type": "comment",
+        "z": "60ed8df9984e056d",
+        "name": "Signup validator",
+        "info": "",
+        "x": 280,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "3def8042dc1b4391",
+        "type": "http in",
+        "z": "60ed8df9984e056d",
+        "name": "signup call",
+        "url": "/users/signup",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 240,
+        "y": 340,
+        "wires": [
+            [
+                "e1071a60b7cb16be",
+                "fd41c88b55a98885"
+            ]
+        ]
+    },
+    {
+        "id": "e1071a60b7cb16be",
+        "type": "subflow:7ebdbadd2fa727b7",
+        "z": "60ed8df9984e056d",
+        "name": "",
+        "x": 590,
+        "y": 360,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "fd41c88b55a98885",
+        "type": "http response",
+        "z": "60ed8df9984e056d",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 570,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "17bb7d24d0352d6e",
+        "type": "comment",
+        "z": "60ed8df9984e056d",
+        "name": "Location entry",
+        "info": "",
+        "x": 250,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "7b3a55c6a046e7b7",
+        "type": "http in",
+        "z": "60ed8df9984e056d",
+        "name": "store location request",
+        "url": "/location/storeLocation",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 300,
+        "y": 520,
+        "wires": [
+            [
+                "8fee1843b6e8f524"
+            ]
+        ]
+    },
+    {
+        "id": "8fee1843b6e8f524",
+        "type": "http response",
+        "z": "60ed8df9984e056d",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 510,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "b96890058f36e407",
+        "type": "comment",
+        "z": "60ed8df9984e056d",
+        "name": "Notification entry storer",
+        "info": "",
+        "x": 300,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "96460f3ef2b620ba",
+        "type": "http in",
+        "z": "60ed8df9984e056d",
+        "name": "notifications documents get",
+        "url": "/summa",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 230,
+        "y": 660,
+        "wires": [
+            [
+                "16d32e87e2eeb90d"
+            ]
+        ]
+    },
+    {
+        "id": "285e2ae8d10eacce",
+        "type": "cloudantplus-selector out",
+        "z": "60ed8df9984e056d",
+        "name": "",
+        "cloudant": "706e6a23b7383e7e",
+        "database": "child_tracker",
+        "service": "_ext_",
+        "payonly": true,
+        "operation": "insert",
+        "x": 690,
+        "y": 660,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "16d32e87e2eeb90d",
+        "type": "function",
+        "z": "60ed8df9984e056d",
+        "name": "function 36",
+        "func": "msg.payload={\n    \"time\":new Date(),\n    \"entry-type\":\"notification\"\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 450,
+        "y": 660,
+        "wires": [
+            [
+                "285e2ae8d10eacce"
+            ]
+        ]
+    }
+]
